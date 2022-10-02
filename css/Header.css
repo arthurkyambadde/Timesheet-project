@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .header_container {
@@ -9,7 +10,6 @@
   width: 50%;
   align-items: center;
   gap: 16px;
-  margin-bottom: 100px;
 }
 
 .header_logo {
@@ -20,6 +20,9 @@
   padding: 4px;
   border-radius: 8px;
   width: 41.77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_main--heading {

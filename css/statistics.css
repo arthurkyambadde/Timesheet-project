@@ -1,0 +1,152 @@
+.statistics {
+  height: 300px;
+  border: 1px solid green;
+  display: flex;
+  gap: 20px;
+}
+
+.statistics_calendar {
+  height: 100%;
+  width: 260px;
+  border: 1px solid green;
+}
+
+.statistics_details--container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 8px 0;
+  width: 1090px;
+}
+
+.statistics_lookup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search_bar {
+  width: 509px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  border-radius: 42px;
+  padding: 24px;
+}
+
+.search_bar--tag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0063f7;
+}
+
+.primary_button {
+  background: #2258bf;
+  border-radius: 42px;
+  padding: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.statistics--cards {
+  display: flex;
+  gap: 18px;
+}
+
+.statistics_card {
+  width: 260px;
+  height: 170px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.statistics_card--status {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+}
+
+.status_tag {
+  font-weight: 800;
+  font-size: 30px;
+  color: #ead40e;
+}
+
+.status_quantity {
+  font-weight: 500;
+  font-size: 48px;
+  color: #444444;
+}
+
+.statistics_percentage--container {
+  width: 81.09px;
+  height: 78.75px;
+  border: 10px solid #ead40e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 10px solid rgba(234, 212, 14, 0.4);
+  border-radius: 50%;
+}
+
+.percentage-tag {
+  font-weight: 800;
+  font-size: 20px;
+  color: #ead40e;
+}
+
+.approved-tag {
+  font-weight: 800;
+  font-size: 30px;
+  color: #67d95d;
+}
+
+.approved_percentage {
+  font-weight: 800;
+  font-size: 20px;
+  color: #67d95d;
+}
+
+.approved_percentage--container {
+  border: 10px solid #67d95d;
+  border-left: 10px solid hsla(115, 62%, 61%, 0.4);
+}
+
+.rejected_tag {
+  color: #eb1616;
+}
+
+.rejected_percentage--tag {
+  font-weight: 800;
+  font-size: 20px;
+  color: #eb1616;
+}
+
+.rejected_percentage--container {
+  border: 10px solid #eb1616;
+  border-left: 10px solid hsl(0, 84%, 50%, 0.4);
+}
+
+.missing_tag {
+  color: #cb52e4;
+}
+
+.missing_percentage-tag {
+  font-weight: 800;
+  font-size: 20px;
+  color: #cb52e4;
+}
+
+.missing_percentage--container {
+  border: 10px solid #cb52e4;
+  border-left: 10px solid hsl(290, 73%, 61%, 0.4);
+}
