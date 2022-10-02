@@ -1,6 +1,5 @@
 .statistics {
-  height: 300px;
-  border: 1px solid green;
+  height: 270px;
   display: flex;
   gap: 20px;
 }
