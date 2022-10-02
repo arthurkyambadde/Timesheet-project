@@ -1,0 +1,34 @@
+.button-container {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.primary_button2 {
+  background: #0f58ef;
+  border: 1px solid #ffff;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.secondary_button {
+  background: #ffffff;
+  border: 1px solid #0f58ef;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0063f7;
+}
