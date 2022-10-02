@@ -1,0 +1,15 @@
+@import url("./Header.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS";
+  line-height: 1.4;
+  margin: 0 50px;
+  padding: 50px 0;
+}
