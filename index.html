@@ -7,24 +7,40 @@
     <title>TimeSheet application</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div>
-      <head>
-        <div>
-          <p>AS</p>
-          <p>Approval Screen</p>
+      <header class="header">
+        <div class="header_container">
+          <p class="header_logo">AS</p>
+          <h1 class="header_main--heading">Approval Screen</h1>
         </div>
-        <div>
-          <p>Complete Report for bussiness Unit:</p>
-          <select name="Select-Unit" id="Units">
-            <option value="Option ">Select Unit</option>
-            <option value="Option_one">Option One</option>
-            <option value="Option_two">Option two</option>
-            <option value="Option_three">Option three</option>
-          </select>
+        <div class="header_selectUnit--container">
+          <p class="header_selectUnit--tag">
+            Complete Report for bussiness Unit:
+          </p>
+          <div>
+            <select
+              name="Select-Unit"
+              id="Units"
+              class="header_selectUnit--dropdown"
+            >
+              <option value="Option " class="dropDown_option">
+                Select Unit
+              </option>
+              <option value="Option_one">Option One</option>
+              <option value="Option_two">Option two</option>
+              <option value="Option_three">Option three</option>
+            </select>
+          </div>
         </div>
-      </head>
+      </header>
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
