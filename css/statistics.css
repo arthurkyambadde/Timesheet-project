@@ -44,11 +44,19 @@
 }
 
 .primary_button {
-  background: #2258bf;
+  background: #0f58ef;
+  border: 1px solid #ffff;
   border-radius: 42px;
-  padding: 24px;
+  width: 240px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  padding: 32px;
   font-weight: 600;
   font-size: 18px;
+  line-height: 21px;
   color: #ffffff;
 }
 
