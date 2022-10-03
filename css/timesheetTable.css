@@ -16,15 +16,17 @@
 }
 
 td {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   color: #342e59;
+  background: #ffffff;
 }
 
 .table_head--column {
-  font-weight: 6s00;
+  font-weight: 600;
   font-size: 16px;
   text-align: center;
   color: #342e59;
   text-align: start;
+  background: #d1d1d108;
 }
