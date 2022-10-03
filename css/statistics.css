@@ -105,6 +105,10 @@
   border-radius: 50%;
 }
 
+.pending {
+  color: #ead40e;
+}
+
 .percentage-tag {
   font-weight: 800;
   font-size: 20px;
@@ -114,6 +118,10 @@
 .approved-tag {
   font-weight: 800;
   font-size: 30px;
+  color: #67d95d;
+}
+
+.approved {
   color: #67d95d;
 }
 
@@ -135,6 +143,10 @@
 .rejected_percentage--tag {
   font-weight: 800;
   font-size: 20px;
+  color: #eb1616;
+}
+
+.rejected {
   color: #eb1616;
 }
 

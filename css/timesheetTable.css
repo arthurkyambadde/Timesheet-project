@@ -14,3 +14,17 @@
 .timesheet_table--row {
   height: 50px;
 }
+
+td {
+  font-weight: 400;
+  font-size: 14px;
+  color: #342e59;
+}
+
+.table_head--column {
+  font-weight: 6s00;
+  font-size: 16px;
+  text-align: center;
+  color: #342e59;
+  text-align: start;
+}
