@@ -21,27 +21,22 @@
           <p class="header_logo">AS</p>
           <h1 class="header_main--heading">Approval Screen</h1>
         </div>
-        <div class="header_selectUnit--container">
-          <p class="header_selectUnit--tag">
+        <form class="header_selectUnit--container">
+          <label class="header_selectUnit--tag" for="units">
             Complete Report for bussiness Unit:
-          </p>
-          <div>
-            <form action="">
-              <select
-                name="Select-Unit"
-                id="Units"
-                class="header_selectUnit--dropdown"
-              >
-                <option value="Option " class="dropDown_option">
-                  Select Unit
-                </option>
-                <option value="Option_one">Option One</option>
-                <option value="Option_two">Option two</option>
-                <option value="Option_three">Option three</option>
-              </select>
-            </form>
-          </div>
-        </div>
+          </label>
+
+          <select
+            name="Select-Unit"
+            id="Units"
+            class="header_selectUnit--dropdown"
+          >
+            <option value="Option " class="dropDown_option">Select Unit</option>
+            <option value="Option_one">Option One</option>
+            <option value="Option_two">Option two</option>
+            <option value="Option_three">Option three</option>
+          </select>
+        </form>
       </header>
       <section class="statistics">
         <div class="statistics_calendar">calendar</div>
@@ -57,7 +52,7 @@
             <div class="statistics--cards">
               <div class="statistics_card">
                 <div class="statistics_card--status">
-                  <span class="status_tag">Submitted</span>
+                  <span class="status_tag">submitted</span>
                   <span class="status_quantity">5</span>
                 </div>
                 <div class="statistics_percentage--container">

@@ -34,6 +34,7 @@
 .header_selectUnit--container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   width: 50%;
   position: relative;
