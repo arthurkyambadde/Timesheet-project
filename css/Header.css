@@ -41,8 +41,8 @@
 }
 
 .header_selectUnit--tag {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   color: #0063f7;
 }
 
@@ -52,6 +52,8 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   width: 343px;
+  height: 35px;
+  padding: 8px;
   margin: 0;
 }
 

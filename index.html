@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TimeSheet application</title>
-    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Timesheet application</title>
+    <link rel="stylesheet" href="./index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"
+    ></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div class="timesheet_application">
@@ -38,21 +49,18 @@
           </select>
         </form>
       </header>
+
       <section class="statistics">
         <div class="statistics_calendar">calendar</div>
         <div class="statistics_details">
           <div class="statistics_details--container">
             <div class="statistics_lookup">
-              <div class="search_bar">
-                <span class="search_bar--tag">Search something</span>
-                <img src="./Assets//searchIcon.svg" alt="searchIcon" />
-              </div>
               <button class="primary_button">Unlock TimeSheet</button>
             </div>
             <div class="statistics--cards">
               <div class="statistics_card">
                 <div class="statistics_card--status">
-                  <span class="status_tag">submitted</span>
+                  <span class="status_tag">Submitted</span>
                   <span class="status_quantity">5</span>
                 </div>
                 <div class="statistics_percentage--container">
@@ -96,129 +104,28 @@
           </div>
         </div>
       </section>
+
       <section class="timesheet_table">
-        <table class="table">
+        <table class="table" id="example">
           <thead>
-            <tr class="timesheet_table--head">
-              <td aria-label="checkbox">
-                <img src="./Assets//notChecked.svg" alt="not checked" />
-              </td>
-              <td class="table_head--column">
-                <span>Employee </span
-                ><img src="./Assets//sortIcon.svg" alt="sort icon" />
-              </td>
-              <td class="table_head--column">
-                <span>Type</span>
-                <img src="./Assets//sortIcon.svg" alt="sort icon" />
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Submitted <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Submission Date
-                  <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Aprvd/Rjctd By
-                  <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Date Approved
-                  <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Processed <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span
-                  >Status <img src="./Assets//sortIcon.svg" alt="sort icon"
-                /></span>
-              </td>
-              <td class="table_head--column">
-                <span>View </span>
-              </td>
-              <td class="table_head--column">
-                <span>Report </span>
-              </td>
+            <tr>
+              <th>Employee</th>
+              <th>Type</th>
+              <th>Submitted</th>
+              <th>Submission Date</th>
+              <th>Aprvd/Rjctd By</th>
+              <th>Date Approved</th>
+              <th>Processed</th>
+              <th>Status</th>
             </tr>
           </thead>
-          <tbody>
-            <tr class="timesheet_table--row">
-              <td aria-label="checkbox">
-                <img src="./Assets//checked.svg" alt="checked checkbox" />
-              </td>
-              <td>Ssonko Jimmy</td>
-              <td>Time sheet</td>
-              <td>Yes</td>
-              <td>11/10/2022</td>
-              <td>Jane Doe</td>
-              <td>09/02/2022</td>
-              <td>Yes</td>
-              <td class="approved">Approved</td>
-              <td>
-                <img src="./Assets//viewIcon.svg" alt="" />
-              </td>
-              <td>
-                <img src="./Assets/dowloadIcon.svg" alt="" />
-              </td>
-            </tr>
-
-            <tr class="timesheet_table--row">
-              <td aria-label="checkbox">
-                <img src="./Assets//checked.svg" alt="checked checkbox" />
-              </td>
-              <td>Denis Duncan</td>
-              <td>Time sheet</td>
-              <td>Yes</td>
-              <td>09/10/2022</td>
-              <td>Mathias</td>
-              <td>15/10/2022</td>
-              <td>No</td>
-              <td class="pending">Pending</td>
-              <td>
-                <img src="./Assets//viewIcon.svg" alt="" />
-              </td>
-              <td><img src="./Assets/dowloadIcon.svg" alt="" /></td>
-            </tr>
-
-            <tr class="timesheet_table--row">
-              <td aria-label="checkbox">
-                <img src="./Assets//notChecked.svg" alt="not checked" />
-              </td>
-              <td>Daniel James</td>
-              <td>Time sheet</td>
-              <td>Yes</td>
-              <td>09/10/2022</td>
-              <td>Jordan</td>
-              <td>09/02/2022</td>
-              <td>Yes</td>
-              <td class="rejected">Rejected</td>
-              <td>
-                <img src="./Assets//viewIcon.svg" alt="" />
-              </td>
-              <td><img src="./Assets/dowloadIcon.svg" alt="" /></td>
-            </tr>
-          </tbody>
         </table>
       </section>
+
       <div class="button-container">
         <button class="secondary_button">Reject</button>
         <button class="primary_button2">Approve</button>
       </div>
     </div>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
   </body>
 </html>
