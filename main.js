@@ -10,6 +10,8 @@ $(document).ready(function () {
       { data: "Date Approved" },
       { data: "Processed" },
       { data: "Status" },
+      { data: "viewIcon" },
+      { data: "downloadIcon" },
     ],
   });
 });
