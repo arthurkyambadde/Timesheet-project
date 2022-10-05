@@ -59,8 +59,7 @@ generateCalendar = (month, year) => {
 
   let first_day = new Date(year, month, 1);
 
-  function clickedMe(event) {
-    console.log("you have clicked me");
+  function changeActiveDay(event) {
     const element = event.target;
 
     let daysContainers = document.getElementById(
@@ -78,7 +77,7 @@ generateCalendar = (month, year) => {
     if (i >= first_day.getDay()) {
       day.classList.add("calendar-day-hover");
       day.innerHTML = i - first_day.getDay() + 1;
-      day.addEventListener("click", clickedMe);
+      day.addEventListener("click", changeActiveDay);
       day.innerHTML += `<span ></span>
                         <span ></span>
                         <span ></span>

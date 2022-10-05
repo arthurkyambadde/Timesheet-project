@@ -6,7 +6,7 @@ $(document).ready(function () {
       { data: "Type" },
       { data: "Submitted" },
       { data: "Submission Date" },
-      { data: "Aprvd/Rjctd By" },
+      { data: "Approved/Rejected By" },
       { data: "Date Approved" },
       { data: "Processed" },
       { data: "Status" },
