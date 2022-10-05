@@ -129,19 +129,20 @@ document.querySelector("#next-year").onclick = () => {
 };
 
 function getCurrentDate(event) {
+  // make cards info dynamic
   const months = {
-    January: 01,
-    February: 02,
-    March: 02,
-    April: 03,
-    May: 04,
-    June: 05,
-    July: 06,
-    August: 07,
-    September: 08,
-    October: 09,
-    November: 11,
-    December: 12,
+    January: 0,
+    February: 1,
+    March: 2,
+    April: 3,
+    May: 4,
+    June: 5,
+    July: 6,
+    August: 7,
+    September: 8,
+    October: 9,
+    November: 10,
+    December: 11,
   };
 
   const day = event.target.innerHTML;
@@ -151,6 +152,25 @@ function getCurrentDate(event) {
   const year = document.getElementById("year").innerHTML;
 
   const date = `${day}/${monthInFigures}/${year};`;
+
+  //Get data
+
+  let filteredData = [];
+
+  fetch("./Data/data.json")
+    .then((res) => res.json())
+    .then((dataObject) => {
+      dataObject.data.forEach((item) => {
+        console.log(item.Submission_Date, date);
+        if (item.Submission_Date === date) {
+          filteredData.push(item);
+
+          console.log(filteredData);
+        }
+      });
+      // const selectedDateData = [...dataObject];
+      // console.log(selectedDateData);
+    });
 
   console.log(date);
 }

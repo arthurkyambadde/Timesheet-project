@@ -5,7 +5,7 @@ $(document).ready(function () {
       { data: "Employee" },
       { data: "Type" },
       { data: "Submitted" },
-      { data: "Submission Date" },
+      { data: "Submission_Date" },
       { data: "Approved/Rejected By" },
       { data: "Date Approved" },
       { data: "Processed" },

@@ -1,11 +1,11 @@
-window.loadData();
+window.loadCardData();
 
 let statisticsData;
 const pending = [];
 const approved = [];
 const rejected = [];
 
-async function loadData() {
+async function loadCardData() {
   fetch("./Data/data.json")
     .then((res) => res.json())
     .then((dataObject) => {
