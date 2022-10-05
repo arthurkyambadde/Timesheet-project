@@ -78,10 +78,8 @@ generateCalendar = (month, year) => {
       day.classList.add("calendar-day-hover");
       day.innerHTML = i - first_day.getDay() + 1;
       day.addEventListener("click", changeActiveDay);
-      day.innerHTML += `<span ></span>
-                        <span ></span>
-                        <span ></span>
-                        <span ></span>`;
+      day.addEventListener("click", getCurrentDate);
+
       if (
         i - first_day.getDay() + 1 === currDate.getDate() &&
         year === currDate.getFullYear() &&
@@ -129,3 +127,30 @@ document.querySelector("#next-year").onclick = () => {
   ++curr_year.value;
   generateCalendar(curr_month.value, curr_year.value);
 };
+
+function getCurrentDate(event) {
+  const months = {
+    January: 01,
+    February: 02,
+    March: 02,
+    April: 03,
+    May: 04,
+    June: 05,
+    July: 06,
+    August: 07,
+    September: 08,
+    October: 09,
+    November: 11,
+    December: 12,
+  };
+
+  const day = event.target.innerHTML;
+
+  const monthInWords = document.getElementById("month-picker").innerHTML;
+  const monthInFigures = months[monthInWords];
+  const year = document.getElementById("year").innerHTML;
+
+  const date = `${day}/${monthInFigures}/${year};`;
+
+  console.log(date);
+}
