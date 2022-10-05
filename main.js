@@ -2,6 +2,7 @@ $(document).ready(function () {
   $("#example").DataTable({
     ajax: "./Data/data.json",
     columns: [
+      { data: "CheckBoxIcon" },
       { data: "Employee" },
       { data: "Type" },
       { data: "Submitted" },

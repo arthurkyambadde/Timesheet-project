@@ -78,7 +78,6 @@ generateCalendar = (month, year) => {
       day.classList.add("calendar-day-hover");
       day.innerHTML = i - first_day.getDay() + 1;
       day.addEventListener("click", changeActiveDay);
-      day.addEventListener("click", getCurrentDate);
 
       if (
         i - first_day.getDay() + 1 === currDate.getDate() &&
@@ -127,50 +126,3 @@ document.querySelector("#next-year").onclick = () => {
   ++curr_year.value;
   generateCalendar(curr_month.value, curr_year.value);
 };
-
-function getCurrentDate(event) {
-  // make cards info dynamic
-  const months = {
-    January: 0,
-    February: 1,
-    March: 2,
-    April: 3,
-    May: 4,
-    June: 5,
-    July: 6,
-    August: 7,
-    September: 8,
-    October: 9,
-    November: 10,
-    December: 11,
-  };
-
-  const day = event.target.innerHTML;
-
-  const monthInWords = document.getElementById("month-picker").innerHTML;
-  const monthInFigures = months[monthInWords];
-  const year = document.getElementById("year").innerHTML;
-
-  const date = `${day}/${monthInFigures}/${year};`;
-
-  //Get data
-
-  let filteredData = [];
-
-  fetch("./Data/data.json")
-    .then((res) => res.json())
-    .then((dataObject) => {
-      dataObject.data.forEach((item) => {
-        console.log(item.Submission_Date, date);
-        if (item.Submission_Date === date) {
-          filteredData.push(item);
-
-          console.log(filteredData);
-        }
-      });
-      // const selectedDateData = [...dataObject];
-      // console.log(selectedDateData);
-    });
-
-  console.log(date);
-}
