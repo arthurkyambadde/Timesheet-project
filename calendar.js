@@ -59,15 +59,30 @@ generateCalendar = (month, year) => {
 
   let first_day = new Date(year, month, 1);
 
+  function clickedMe(event) {
+    console.log("you have clicked me");
+    const element = event.target;
+
+    let daysContainers = document.getElementById(
+      "Calendar_days--container"
+    ).children;
+
+    for (let i = 0; i < daysContainers.length; i++) {
+      daysContainers[i].className = "nonactive_day";
+    }
+    element.classList.add("active_day");
+  }
+
   for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
     let day = document.createElement("div");
     if (i >= first_day.getDay()) {
       day.classList.add("calendar-day-hover");
       day.innerHTML = i - first_day.getDay() + 1;
-      day.innerHTML += `<span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>`;
+      day.addEventListener("click", clickedMe);
+      day.innerHTML += `<span ></span>
+                        <span ></span>
+                        <span ></span>
+                        <span ></span>`;
       if (
         i - first_day.getDay() + 1 === currDate.getDate() &&
         year === currDate.getFullYear() &&
@@ -114,11 +129,4 @@ document.querySelector("#prev-year").onclick = () => {
 document.querySelector("#next-year").onclick = () => {
   ++curr_year.value;
   generateCalendar(curr_month.value, curr_year.value);
-};
-
-let dark_mode_toggle = document.querySelector(".dark-mode-switch");
-
-dark_mode_toggle.onclick = () => {
-  document.querySelector("body").classList.toggle("light");
-  document.querySelector("body").classList.toggle("dark");
 };
