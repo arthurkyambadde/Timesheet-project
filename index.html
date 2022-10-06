@@ -19,6 +19,9 @@
       charset="utf8"
       src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"
     ></script>
+
+    <script></script>
+
     <script src="./main.js"></script>
   </head>
   <body>
@@ -134,10 +137,18 @@
       </section>
 
       <section class="timesheet_table">
-        <table class="table" id="example">
+        <div class="">
+          <div class="">
+            <h3>Selected Record ids: =></h3>
+          </div>
+          <div class="selectedDiv"></div>
+        </div>
+        <table class="table" id="tblData">
           <thead>
             <tr>
-              <th><img src="./Assets//notChecked.svg" alt="checkbox" /></th>
+              <th>
+                <input type="checkbox" class="largerCheckbox" id="chkAll" />
+              </th>
               <th>Employee</th>
               <th>Type</th>
               <th>Submitted</th>
@@ -157,6 +168,46 @@
         <button class="secondary_button">Reject</button>
         <button class="primary_button2">Approve</button>
       </div>
+    </div>
+    <div class="modal">
+      <section class="modal_container">
+        <div class="return_arrow--container">
+          <img src="./Assets//returnArrow.svg" alt="return arrow" />
+        </div>
+        <div class="timesheet_details">
+          <p class="employee_name">
+            Employee Name: <span class="name">Sonko Jimmy</span>
+          </p>
+          <p class="timesheet_status">Approved</p>
+        </div>
+        <div class="timesheet_status--info">
+          <div class="group_one">
+            <p class="info_text">Processed Date : 22/06/2022</p>
+            <p class="info_text">Weekending Date : 12/06/2022</p>
+            <p class="info_text">Chargebility Rate: 25$ / hr</p>
+          </div>
+          <div class="group_two">
+            <p class="info_text">Total Billable hours : 46:00 hrs</p>
+            <p class="info_text">Total Timeoff hours : 04:00 hrs</p>
+            <p class="info_text">Total hours : 50:00 hours</p>
+          </div>
+        </div>
+        <div class="modal_datatable"></div>
+        <div class="decision_section">
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Type your comments here.......... "
+            class="text_area"
+          ></textarea>
+          <div class="buttons">
+            <button class="approve_button">APPROVE</button>
+            <button class="reject_button">REJECT</button>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="calendar.js"></script>
     <script src="statistics.js"></script>

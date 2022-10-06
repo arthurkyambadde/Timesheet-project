@@ -1,7 +1,8 @@
 {
   "data": [
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='checked icon'/>",
+      "id": "1",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Arthur",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -14,7 +15,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='checked icon'/>",
+      "id": "2",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Daniel",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -27,7 +29,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/notChecked.svg' alt='download icon'/>",
+      "id": "3",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -40,7 +43,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/notChecked.svg' alt='download icon'/>",
+      "id": "4",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -53,7 +57,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "5",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Jordan",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -66,7 +71,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "6",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Patricia",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -79,7 +85,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/notChecked.svg' alt='download icon'/>",
+      "id": "7",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -92,7 +99,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "8",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -105,7 +113,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "9",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Jordan",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -118,7 +127,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/notChecked.svg' alt='download icon'/>",
+      "id": "10",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Patricia",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -131,7 +141,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "11",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -144,7 +155,8 @@
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {
-      "CheckBoxIcon": "<img src='../Assets/checked.svg' alt='download icon'/>",
+      "id": "12",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",

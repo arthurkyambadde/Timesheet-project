@@ -1,0 +1,136 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(136, 136, 136, 0.6);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal_container {
+  width: 1120px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 45px;
+}
+
+.return_arrow--container {
+  height: 50px;
+  margin: 0;
+}
+
+.timesheet_details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employee_name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0063f7;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #444444;
+}
+
+.timesheet_status {
+  font-weight: 600;
+  font-size: 16px;
+  color: #219653;
+  letter-spacing: 1.1px;
+}
+
+.timesheet_status--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.group_one {
+  padding: 12px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group_two {
+  padding: 12px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.info_text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #606170;
+}
+
+.modal_datatable {
+  height: 365px;
+  border: 1px solid green;
+}
+
+.decision_section {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_area {
+  background: rgba(217, 217, 217, 0.51);
+  border-radius: 8px;
+  outline: none;
+  width: 600px;
+  border: none;
+  padding: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.approve_button {
+  background: #0f58ef;
+  border: 1px solid #ffff;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.reject_button {
+  background: #fff;
+  border: 2px solid #0f58ef;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f58ef;
+}

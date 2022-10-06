@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#example").DataTable({
+  $("#tblData").DataTable({
     ajax: "./Data/data.json",
     columns: [
       { data: "CheckBoxIcon" },
@@ -14,5 +14,42 @@ $(document).ready(function () {
       { data: "viewIcon" },
       { data: "downloadIcon" },
     ],
+  });
+});
+
+function getCheckRecords() {
+  $(".selectedDiv").html("");
+  $(".tblChk:checked").each(function () {
+    if ($(this).prop("checked")) {
+      if ($(".selectedDiv").children().length == 0) {
+        const record = "<strong>" + $(this).attr("data-id") + " </strong>";
+        $(".selectedDiv").append(record);
+      } else {
+        const record = ", <strong>" + $(this).attr("data-id") + " </strong>";
+        $(".selectedDiv").append(record);
+      }
+    }
+    console.log(this.value);
+  });
+}
+
+$(document).ready(function () {
+  $("#tblData").on("change", ".tblChk", function () {
+    if ($(".tblChk:checked").length == $(".tblChk").length) {
+      $("#chkAll").prop("checked", true);
+    } else {
+      $("#chkAll").prop("checked", false);
+    }
+    getCheckRecords();
+    console.log("done");
+  });
+
+  $("#chkAll").change(function () {
+    if ($(this).prop("checked")) {
+      $(".tblChk").not(this).prop("checked", true);
+    } else {
+      $(".tblChk").not(this).prop("checked", false);
+    }
+    getCheckRecords();
   });
 });
