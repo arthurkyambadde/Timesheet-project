@@ -17,6 +17,12 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#selectAll").click(function () {
+    $("input[type=checkbox]").prop("checked", $("#selectAll").is(":checked"));
+  });
+});
+
 function getCheckRecords() {
   $(".selectedDiv").html("");
   $(".tblChk:checked").each(function () {
