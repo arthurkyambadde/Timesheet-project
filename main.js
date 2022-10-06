@@ -82,6 +82,7 @@ function rejectData() {
     const id = nodeItem.dataset.id;
     const detail = source_data.find((value) => value.id === id);
 
+    source_data = source_data.filter((data) => data.id !== id);
     rejectedData.push(detail);
   });
 
