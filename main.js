@@ -1,20 +1,27 @@
+let source_data = null;
+
 $(document).ready(function () {
-  $("#tblData").DataTable({
-    ajax: "./Data/data.json",
-    columns: [
-      { data: "CheckBoxIcon" },
-      { data: "Employee" },
-      { data: "Type" },
-      { data: "Submitted" },
-      { data: "Submission_Date" },
-      { data: "Approved/Rejected By" },
-      { data: "Date Approved" },
-      { data: "Processed" },
-      { data: "Status" },
-      { data: "viewIcon" },
-      { data: "downloadIcon" },
-    ],
-  });
+  fetch("./Data/data.json")
+    .then((res) => res.json())
+    .then((req) => {
+      source_data = req.data;
+      $("#tblData").DataTable({
+        data: source_data,
+        columns: [
+          { data: "CheckBoxIcon" },
+          { data: "Employee" },
+          { data: "Type" },
+          { data: "Submitted" },
+          { data: "Submission_Date" },
+          { data: "Approved/Rejected By" },
+          { data: "Date Approved" },
+          { data: "Processed" },
+          { data: "Status" },
+          { data: "viewIcon" },
+          { data: "downloadIcon" },
+        ],
+      });
+    });
 });
 
 $(document).ready(function () {
@@ -25,15 +32,16 @@ $(document).ready(function () {
   $("#submitButton").click(function () {
     const table = $("#tblData").DataTable();
 
-    let checkedvalues = table
-      .$("input:checked")
-      .map(function () {
-        return this.id;
-      })
-      .get()
-      .join(",");
+    // console.log(table.$("input:checked"));
+    const checkedDetails = [];
 
-    console.log(table.$("input:checked"));
-    console.log(checkedvalues);
+    table.$("input:checked").each(function (nodeIndex, nodeItem) {
+      const id = nodeItem.dataset.id;
+      const detail = source_data.find((value) => value.id === id);
+
+      checkedDetails.push(detail);
+    });
+
+    console.log(checkedDetails);
   });
 });
