@@ -83,8 +83,10 @@ function rejectData() {
     const detail = source_data.find((value) => value.id === id);
 
     source_data = source_data.filter((data) => data.id !== id);
-    rejectedData.push(detail);
+    rejectedData.push({ ...detail });
   });
+
+  renderTable();
 
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
