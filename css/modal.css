@@ -118,6 +118,7 @@
   font-weight: 600;
   font-size: 16px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reject_button {
@@ -133,4 +134,5 @@
   font-weight: 600;
   font-size: 16px;
   color: #0f58ef;
+  cursor: pointer;
 }
