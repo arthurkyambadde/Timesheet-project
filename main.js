@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   $("#submitButton").click(approveData);
-  $("#rejectButton").click(rejectData);
+  $("#rejectedButton").click(rejectData);
 });
 
 //approve data functions
