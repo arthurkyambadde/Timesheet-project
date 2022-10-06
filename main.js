@@ -29,19 +29,20 @@ $(document).ready(function () {
     $("input[type=checkbox]").prop("checked", $("#selectAll").is(":checked"));
   });
 
-  $("#submitButton").click(function () {
-    const table = $("#tblData").DataTable();
-
-    // console.log(table.$("input:checked"));
-    const checkedDetails = [];
-
-    table.$("input:checked").each(function (nodeIndex, nodeItem) {
-      const id = nodeItem.dataset.id;
-      const detail = source_data.find((value) => value.id === id);
-
-      checkedDetails.push(detail);
-    });
-
-    console.log(checkedDetails);
-  });
+  $("#submitButton").click(approveData);
 });
+
+function approveData() {
+  const table = $("#tblData").DataTable();
+
+  const checkedDetails = [];
+
+  table.$("input:checked").each(function (nodeIndex, nodeItem) {
+    const id = nodeItem.dataset.id;
+    const detail = source_data.find((value) => value.id === id);
+
+    checkedDetails.push(detail);
+  });
+
+  console.log(checkedDetails); // This data can now be sent to your preffered storage
+}
