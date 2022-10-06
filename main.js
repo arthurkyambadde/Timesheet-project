@@ -30,19 +30,37 @@ $(document).ready(function () {
   });
 
   $("#submitButton").click(approveData);
+  $("#rejectButton").click(rejectData);
 });
+
+//approve data functions
 
 function approveData() {
   const table = $("#tblData").DataTable();
 
-  const checkedDetails = [];
+  const approvedData = [];
 
   table.$("input:checked").each(function (nodeIndex, nodeItem) {
     const id = nodeItem.dataset.id;
     const detail = source_data.find((value) => value.id === id);
 
-    checkedDetails.push(detail);
+    approvedData.push(detail);
   });
 
-  console.log(checkedDetails); // This data can now be sent to your preffered storage
+  console.log(approvedData); // This data can now be sent to your preffered storage for approved data
+}
+
+function rejectData() {
+  const table = $("#tblData").DataTable();
+
+  const rejectedData = [];
+
+  table.$("input:checked").each(function (nodeIndex, nodeItem) {
+    const id = nodeItem.dataset.id;
+    const detail = source_data.find((value) => value.id === id);
+
+    rejectedData.push(detail);
+  });
+
+  console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
