@@ -24,6 +24,26 @@ $(document).ready(function () {
     });
 });
 
+function renderTable() {
+  $("#tblData").DataTable().destroy();
+  $("#tblData").DataTable({
+    data: source_data,
+    columns: [
+      { data: "CheckBoxIcon" },
+      { data: "Employee" },
+      { data: "Type" },
+      { data: "Submitted" },
+      { data: "Submission_Date" },
+      { data: "Approved/Rejected By" },
+      { data: "Date Approved" },
+      { data: "Processed" },
+      { data: "Status" },
+      { data: "viewIcon" },
+      { data: "downloadIcon" },
+    ],
+  });
+}
+
 $(document).ready(function () {
   $("#selectAll").click(function () {
     $("input[type=checkbox]").prop("checked", $("#selectAll").is(":checked"));
@@ -44,8 +64,11 @@ function approveData() {
     const id = nodeItem.dataset.id;
     const detail = source_data.find((value) => value.id === id);
 
-    approvedData.push(detail);
+    source_data = source_data.filter((data) => data.id !== id);
+    approvedData.push({ ...detail });
   });
+
+  renderTable();
 
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
 }
