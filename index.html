@@ -137,38 +137,46 @@
         </div>
       </section>
 
-      <section class="timesheet_table">
-        <div class="">
+      <form action="POST">
+        <section class="timesheet_table">
           <div class="">
-            <h3>Selected Record ids: =></h3>
+            <div class="">
+              <h3>Selected Record ids: =></h3>
+            </div>
+            <div class="selectedDiv"></div>
           </div>
-          <div class="selectedDiv"></div>
-        </div>
-        <table class="table" id="tblData">
-          <thead>
-            <tr>
-              <th>
-                <input type="checkbox" class="largerCheckbox" id="selectAll" />
-              </th>
-              <th>Employee</th>
-              <th>Type</th>
-              <th>Submitted</th>
-              <th>Submission Date</th>
-              <th>Approved/Rejected By</th>
-              <th>Date Approved</th>
-              <th>Processed</th>
-              <th>Status</th>
-              <th>View</th>
-              <th>Report</th>
-            </tr>
-          </thead>
-        </table>
-      </section>
+          <table class="table" id="tblData">
+            <thead>
+              <tr>
+                <th>
+                  <input
+                    type="checkbox"
+                    class="largerCheckbox"
+                    id="selectAll"
+                  />
+                </th>
+                <th>Employee</th>
+                <th>Type</th>
+                <th>Submitted</th>
+                <th>Submission Date</th>
+                <th>Approved/Rejected By</th>
+                <th>Date Approved</th>
+                <th>Processed</th>
+                <th>Status</th>
+                <th>View</th>
+                <th>Report</th>
+              </tr>
+            </thead>
+          </table>
+        </section>
 
-      <div class="button-container">
-        <button class="secondary_button">Reject</button>
-        <button class="primary_button2">Approve</button>
-      </div>
+        <div class="button-container">
+          <button class="secondary_button">Reject</button>
+          <button type="button" class="primary_button2" id="submitButton">
+            Approve
+          </button>
+        </div>
+      </form>
     </div>
     <div class="modal">
       <section class="modal_container">

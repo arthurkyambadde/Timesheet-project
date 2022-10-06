@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "1",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox'  class='largerCheckbox' data-id='1' />",
       "Employee": "Arthur",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -16,7 +16,7 @@
     },
     {
       "id": "2",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='2' />",
       "Employee": "Daniel",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -30,7 +30,7 @@
     },
     {
       "id": "3",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='3' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -44,7 +44,7 @@
     },
     {
       "id": "4",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='4' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -58,7 +58,7 @@
     },
     {
       "id": "5",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='5' />",
       "Employee": "Jordan",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -72,7 +72,7 @@
     },
     {
       "id": "6",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='6' />",
       "Employee": "Patricia",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -86,7 +86,7 @@
     },
     {
       "id": "7",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='7' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -100,7 +100,7 @@
     },
     {
       "id": "8",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='8' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -114,7 +114,7 @@
     },
     {
       "id": "9",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='9' />",
       "Employee": "Jordan",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -128,7 +128,7 @@
     },
     {
       "id": "10",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='10' />",
       "Employee": "Patricia",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -142,7 +142,7 @@
     },
     {
       "id": "11",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='11' />",
       "Employee": "Jimmy",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -156,7 +156,7 @@
     },
     {
       "id": "12",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='tblchk chk' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='12' />",
       "Employee": "Denis",
       "Type": "Timesheet",
       "Submitted": "Yes",
