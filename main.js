@@ -88,3 +88,5 @@ function rejectData() {
 
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
+
+renderTable();
