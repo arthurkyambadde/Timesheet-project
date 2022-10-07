@@ -1,4 +1,5 @@
 let source_data = null;
+let modal_data = null;
 
 $(document).ready(function () {
   fetch("./Data/data.json")
@@ -24,6 +25,30 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+  fetch("./Data/modalData.json")
+    .then((res) => res.json())
+    .then((req) => {
+      modal_data = req.data;
+      $("#ModalTblData").DataTable({
+        data: modal_data,
+        columns: [
+          { data: "CheckBoxIcon" },
+          { data: "ProjectName" },
+          { data: "Task" },
+          { data: "Monday" },
+          { data: "Tuesday" },
+          { data: "Wednesday" },
+          { data: "Thursday" },
+          { data: "Friday" },
+          { data: "Saturday" },
+          { data: "Sunday" },
+          { data: "Total" },
+        ],
+      });
+    });
+});
+
 function renderTable() {
   $("#tblData").DataTable().destroy();
   $("#tblData").DataTable({
@@ -44,9 +69,44 @@ function renderTable() {
   });
 }
 
+function renderModalTable() {
+  $("#ModalTblData").DataTable().destroy();
+  $("#ModalTblData").DataTable({
+    data: modal_data,
+    columns: [
+      { data: "CheckBoxIcon" },
+      { data: "ProjectName" },
+      { data: "Task" },
+      { data: "Monday" },
+      { data: "Tuesday" },
+      { data: "Wednesday" },
+      { data: "Thursday" },
+      { data: "Friday" },
+      { data: "Saturday" },
+      { data: "Sunday" },
+      { data: "Total" },
+    ],
+  });
+}
+
 $(document).ready(function () {
   $("#selectAll").click(function () {
-    $("input[type=checkbox]").prop("checked", $("#selectAll").is(":checked"));
+    $("table.table1 input[type=checkbox]").prop(
+      "checked",
+      $("#selectAll").is(":checked")
+    );
+  });
+
+  $("#submitButton").click(approveData);
+  $("#rejectedButton").click(rejectData);
+});
+
+$(document).ready(function () {
+  $("#ModalSelectAll").click(function () {
+    $("input[type=checkbox]").prop(
+      "checked",
+      $("#ModalSelectAll").is(":checked")
+    );
   });
 
   $("#submitButton").click(approveData);
