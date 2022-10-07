@@ -93,6 +93,7 @@
                 </div>
                 <div class="statistics_percentage--container">
                   <span class="percentage-tag" id="submittedperc">100%</span>
+                  <div></div>
                 </div>
               </div>
               <div class="statistics_card">
@@ -145,7 +146,7 @@
             </div>
             <div class="selectedDiv"></div>
           </div>
-          <table class="table" id="tblData">
+          <table class="table1" id="tblData">
             <thead>
               <tr>
                 <th>
@@ -180,46 +181,72 @@
         </div>
       </form>
     </div>
-    <div class="modal">
-      <section class="modal_container">
-        <div class="return_arrow--container">
-          <img src="./Assets//returnArrow.svg" alt="return arrow" />
-        </div>
-        <div class="timesheet_details">
-          <p class="employee_name">
-            Employee Name: <span class="name">Sonko Jimmy</span>
-          </p>
-          <p class="timesheet_status">Approved</p>
-        </div>
-        <div class="timesheet_status--info">
-          <div class="group_one">
-            <p class="info_text">Processed Date : 22/06/2022</p>
-            <p class="info_text">Weekending Date : 12/06/2022</p>
-            <p class="info_text">Chargebility Rate: 25$ / hr</p>
+    <form action="POST">
+      <div class="modal">
+        <section class="modal_container">
+          <div class="return_arrow--container">
+            <img src="./Assets//returnArrow.svg" alt="return arrow" />
           </div>
-          <div class="group_two">
-            <p class="info_text">Total Billable hours : 46:00 hrs</p>
-            <p class="info_text">Total Timeoff hours : 04:00 hrs</p>
-            <p class="info_text">Total hours : 50:00 hours</p>
+          <div class="timesheet_details">
+            <p class="employee_name">
+              Employee Name: <span class="name">Sonko Jimmy</span>
+            </p>
+            <p class="timesheet_status">Approved</p>
           </div>
-        </div>
-        <div class="modal_datatable"></div>
-        <div class="decision_section">
-          <textarea
-            name="comments"
-            id="comments"
-            cols="30"
-            rows="10"
-            placeholder="Type your comments here.......... "
-            class="text_area"
-          ></textarea>
-          <div class="buttons">
-            <button class="approve_button">APPROVE</button>
-            <button class="reject_button">REJECT</button>
+          <div class="timesheet_status--info">
+            <div class="group_one">
+              <p class="info_text">Processed Date : 22/06/2022</p>
+              <p class="info_text">Weekending Date : 12/06/2022</p>
+              <p class="info_text">Chargebility Rate: 25$ / hr</p>
+            </div>
+            <div class="group_two">
+              <p class="info_text">Total Billable hours : 46:00 hrs</p>
+              <p class="info_text">Total Timeoff hours : 04:00 hrs</p>
+              <p class="info_text">Total hours : 50:00 hours</p>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+          <div class="modal_datatable">
+            <table class="table" id="ModalTblData">
+              <thead>
+                <tr>
+                  <th>
+                    <input
+                      type="checkbox"
+                      class="largerCheckbox"
+                      id="ModalSelectAll"
+                    />
+                  </th>
+                  <th>Project Name</th>
+                  <th>Task</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th>Saturday</th>
+                  <th>Sunday</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="decision_section">
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="Type your comments here.......... "
+              class="text_area"
+            ></textarea>
+            <div class="buttons">
+              <button class="approve_button">APPROVE</button>
+              <button class="reject_button">REJECT</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </form>
     <script src="calendar.js"></script>
     <script src="statistics.js"></script>
   </body>
