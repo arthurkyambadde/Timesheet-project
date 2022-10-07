@@ -19,8 +19,29 @@ body {
 
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .timesheet_application {
   margin: 0 30px;
   padding: 30px 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f58ef;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f5aef52;
 }

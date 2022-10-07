@@ -79,7 +79,10 @@
 
 .modal_datatable {
   height: 365px;
-  border: 1px solid green;
+
+  margin: 10px 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .decision_section {

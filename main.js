@@ -97,7 +97,7 @@ $(document).ready(function () {
     );
   });
 
-  $("#submitButton").click(approveData);
+  $("#submitButtonselectAll").click(approveData);
   $("#rejectedButton").click(rejectData);
 });
 

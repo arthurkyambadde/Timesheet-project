@@ -1,9 +1,15 @@
 .timesheet_table {
-  padding: 50px 0 30px 0;
+  padding: 0 0 30px 0;
   width: 100%;
   border-collapse: collapse;
   border: none;
   margin: 0;
+}
+
+.dataTable {
+  height: 320px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .timesheet_table--head {
