@@ -103,7 +103,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#ModalSelectAll").click(function () {
-    $("input[type=checkbox]").prop(
+    $("table.table2 input[type=checkbox]").prop(
       "checked",
       $("#ModalSelectAll").is(":checked")
     );
@@ -111,9 +111,11 @@ $(document).ready(function () {
 
   $("#submitButton").click(approveData);
   $("#rejectedButton").click(rejectData);
+  $("#MsubmitButton").click(approveMData);
+  $("#MrejectedButton").click(rejectMData);
 });
 
-//approve data functions
+//approve data functions for table one
 
 function approveData() {
   const table = $("#tblData").DataTable();
@@ -132,6 +134,8 @@ function approveData() {
 
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
 }
+
+//reject data function for table one
 
 function rejectData() {
   const table = $("#tblData").DataTable();
@@ -152,3 +156,43 @@ function rejectData() {
 }
 
 renderTable();
+
+//approve data function for table two
+
+function approveMData() {
+  const table = $("#ModalTblData").DataTable();
+
+  const approvedData = [];
+
+  table.$("input:checked").each(function (nodeIndex, nodeItem) {
+    const id = nodeItem.dataset.id;
+    const detail = source_data.find((value) => value.id === id);
+
+    modal_data = modal_data.filter((data) => data.id !== id);
+    approvedData.push({ ...detail });
+  });
+
+  renderModalTable();
+
+  console.log(approvedData); // This data can now be sent to your preffered storage for approved data
+}
+
+//reject data function for table two
+
+function rejectMData() {
+  const table = $("#ModalTblData").DataTable();
+
+  const rejectedData = [];
+
+  table.$("input:checked").each(function (nodeIndex, nodeItem) {
+    const id = nodeItem.dataset.id;
+    const detail = source_data.find((value) => value.id === id);
+
+    modal_data = modal_data.filter((data) => data.id !== id);
+    rejectedData.push({ ...detail });
+  });
+
+  renderModalTable();
+
+  console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
+}

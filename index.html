@@ -181,7 +181,7 @@
         </div>
       </form>
     </div>
-    <form action="POST">
+    <form action="/modal" method="POST" id="modal">
       <div class="modal">
         <section class="modal_container">
           <div class="return_arrow--container">
@@ -206,7 +206,7 @@
             </div>
           </div>
           <div class="modal_datatable">
-            <table class="table" id="ModalTblData">
+            <table class="table2" id="ModalTblData">
               <thead>
                 <tr>
                   <th>
@@ -240,8 +240,12 @@
               class="text_area"
             ></textarea>
             <div class="buttons">
-              <button class="approve_button">APPROVE</button>
-              <button class="reject_button">REJECT</button>
+              <button class="approve_button" id="MsubmitButton" type="button">
+                APPROVE
+              </button>
+              <button class="reject_button" id="MrejectedButton" type="button">
+                REJECT
+              </button>
             </div>
           </div>
         </section>
