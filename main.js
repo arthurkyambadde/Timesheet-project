@@ -130,6 +130,23 @@ $(document).ready(function () {
   $("#rejectedButton").click(rejectData);
   $("#MsubmitButton").click(approveMData);
   $("#MrejectedButton").click(rejectMData);
+
+  //comments pop-up modal functionality
+
+  const openCommentsModal2 = document.querySelector("#openCommentsModal2");
+  const openCommentsModal1 = document.querySelector("#openCommentsModal1");
+
+  const closeCommentsModal1 = document.querySelector(".closeCommentsModal1");
+  const closeCommentsModal2 = document.querySelector(".closeCommentsModal2");
+
+  console.log(closeCommentsModal1);
+  console.log(closeCommentsModal2);
+
+  openCommentsModal1.addEventListener("click", openCommentsModal);
+  openCommentsModal2.addEventListener("click", openCommentsModal);
+
+  closeCommentsModal1.addEventListener("click", closeCommentsModal);
+  closeCommentsModal2.addEventListener("click", closeCommentsModal);
 });
 
 //approve data functions for table one
@@ -238,4 +255,19 @@ function setModalInfo(idInformation) {
   document.querySelector(
     ".Weekending_date"
   ).innerHTML = `Weekending Date ${idInformation.WeekendingDate}`;
+}
+
+function openCommentsModal() {
+  const modal = document.querySelector(".comment_Section--container");
+  modal.classList.remove("hidden");
+}
+
+function closeCommentsModal() {
+  const modal = document.querySelector(".comment_Section--container");
+  modal.classList.add("hidden");
+  const comments = document.getElementById("comments");
+
+  console.log(comments.value); // this value can be stored where comments should be stored at the backend
+
+  comments.value = "";
 }
