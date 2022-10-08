@@ -12,7 +12,9 @@
       "Processed": "Yes",
       "Status": "Approved",
       "viewIcon": "<button data-id='1' class='view'  type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/8/2022",
+      "WeekendingDate": "12/06/2022"
     },
     {
       "id": "2",
@@ -26,7 +28,9 @@
       "Processed": "No",
       "Status": "Rejected",
       "viewIcon": "<button class='view' data-id='2' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "2/8/2024",
+      "WeekendingDate": "08/06/2022"
     },
     {
       "id": "3",
@@ -40,7 +44,9 @@
       "Processed": "No",
       "Status": "Pending",
       "viewIcon": "<button class='view' data-id='3' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/6/2022",
+      "WeekendingDate": "2/04/2021"
     },
     {
       "id": "4",
@@ -54,7 +60,9 @@
       "Processed": "Yes",
       "Status": "Approved",
       "viewIcon": "<button class='view' data-id='4' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "12/8/2022",
+      "WeekendingDate": "18/06/2002"
     },
     {
       "id": "5",
@@ -68,7 +76,9 @@
       "Processed": "No",
       "Status": "Pending",
       "viewIcon": "<button class='view' data-id='5' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/8/2020",
+      "WeekendingDate": "11/05/2000"
     },
     {
       "id": "6",
@@ -82,7 +92,9 @@
       "Processed": "No",
       "Status": "Rejected",
       "viewIcon": "<button class='view' data-id='6' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/12/2022",
+      "WeekendingDate": "11/02/2012"
     },
     {
       "id": "7",
@@ -96,7 +108,9 @@
       "Processed": "No",
       "Status": "Pending",
       "viewIcon": "<button class='view' data-id='7' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "09/8/2022",
+      "WeekendingDate": "18/09/2022"
     },
     {
       "id": "8",
@@ -110,7 +124,9 @@
       "Processed": "Yes",
       "Status": "Approved",
       "viewIcon": "<button class='view' data-id='8' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "2/4/2022",
+      "WeekendingDate": "10/06/2021"
     },
     {
       "id": "9",
@@ -124,7 +140,9 @@
       "Processed": "No",
       "Status": "Pending",
       "viewIcon": "<button class='view' data-id='9' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "3/8/2012",
+      "WeekendingDate": "18/06/2002"
     },
     {
       "id": "10",
@@ -138,7 +156,9 @@
       "Processed": "No",
       "Status": "Rejected",
       "viewIcon": "<button class='view' data-id='10' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/8/2008",
+      "WeekendingDate": "19/06/2022"
     },
     {
       "id": "11",
@@ -152,7 +172,9 @@
       "Processed": "No",
       "Status": "Pending",
       "viewIcon": "<button class='view' data-id='11' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "14/5/2022",
+      "WeekendingDate": "27/06/2022"
     },
     {
       "id": "12",
@@ -166,7 +188,9 @@
       "Processed": "Yes",
       "Status": "Approved",
       "viewIcon": "<button class='view' data-id='12' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "2/8/2002",
+      "WeekendingDate": "30/06/2022"
     }
   ]
 }

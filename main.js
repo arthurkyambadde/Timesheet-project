@@ -48,14 +48,11 @@ $(document).ready(function () {
         ],
         initComplete: function () {
           $("#tblData tbody").on("click", ".view", function (e) {
-            console.log(this);
-            console.log("you clicked me");
-
             const selectedID = this.dataset.id;
 
             selected_data = source_data.find((item) => item.id === selectedID);
             console.log(selected_data);
-
+            setModalInfo(selected_data);
             openModal();
           });
 
@@ -230,4 +227,15 @@ function closeModal() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
   selected_data = null;
+}
+
+function setModalInfo(idInformation) {
+  document.querySelector(".name").innerHTML = idInformation.Employee;
+  document.querySelector(".timesheet_status").innerHTML = idInformation.Status;
+  document.querySelector(
+    ".processed_date"
+  ).innerHTML = `Processed Date : ${idInformation.ProcessedDate}`;
+  document.querySelector(
+    ".Weekending_date"
+  ).innerHTML = `Weekending Date ${idInformation.WeekendingDate}`;
 }
