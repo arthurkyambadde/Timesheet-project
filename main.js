@@ -1,5 +1,6 @@
 let source_data = null;
 let modal_data = null;
+let selected_data = null;
 
 $(document).ready(function () {
   fetch("./Data/data.json")
@@ -46,32 +47,20 @@ $(document).ready(function () {
           { data: "Total" },
         ],
         initComplete: function () {
-          const table = $("#tblData").DataTable();
-
-          $("#tblData tbody").on("click", "tr", function () {
-            // const data = table.row(this).data();
-            // alert("You clicked on " + data[0] + "'s row");
-
+          $("#tblData tbody").on("click", ".view", function (e) {
+            console.log(this);
             console.log("you clicked me");
-            const modal = document.querySelector(".modal");
-            const overlay = document.querySelector(".overlay");
-            const openModalBtn = document.querySelector("#tblData tbody tr");
-            const closeModalBtn = document.querySelector(".btn-close");
 
-            const openModal = function () {
-              modal.classList.remove("hidden");
-              overlay.classList.remove("hidden");
-            };
+            const selectedID = this.dataset.id;
 
-            openModalBtn.addEventListener("click", openModal);
+            selected_data = source_data.find((item) => item.id === selectedID);
+            console.log(selected_data);
 
-            const closeModal = function () {
-              modal.classList.add("hidden");
-              overlay.classList.add("hidden");
-            };
-
-            closeModalBtn.addEventListener("click", closeModal);
+            openModal();
           });
+
+          const closeModalBtn = document.querySelector(".btn-close");
+          closeModalBtn.addEventListener("click", closeModal);
         },
       });
     });
@@ -94,14 +83,7 @@ function renderTable() {
       { data: "viewIcon" },
       { data: "downloadIcon" },
     ],
-    initComplete: function () {
-      const table = $("#tblData").DataTable();
-
-      $("#tblData tbody").on("click", "tr", function () {
-        const data = table.row(this).data();
-        alert("You clicked on " + data[0] + "'s row");
-      });
-    },
+    initComplete: function () {},
   });
 }
 
@@ -235,4 +217,17 @@ function rejectMData() {
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
 
-$(document).ready(function () {});
+function openModal() {
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
+function closeModal() {
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  selected_data = null;
+}
