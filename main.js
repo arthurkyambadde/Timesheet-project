@@ -57,6 +57,7 @@ $(document).ready(function () {
           });
 
           const closeModalBtn = document.querySelector(".btn-close");
+
           closeModalBtn.addEventListener("click", closeModal);
         },
       });
@@ -231,6 +232,8 @@ function rejectMData() {
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
 
+//row data modal functions
+
 function openModal() {
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
@@ -246,17 +249,7 @@ function closeModal() {
   selected_data = null;
 }
 
-function setModalInfo(idInformation) {
-  document.querySelector(".name").innerHTML = idInformation.Employee;
-  document.querySelector(".timesheet_status").innerHTML = idInformation.Status;
-  document.querySelector(
-    ".processed_date"
-  ).innerHTML = `Processed Date : ${idInformation.ProcessedDate}`;
-  document.querySelector(
-    ".Weekending_date"
-  ).innerHTML = `Weekending Date ${idInformation.WeekendingDate}`;
-}
-
+//comments pop-up modal functions
 function openCommentsModal() {
   const modal = document.querySelector(".comment_Section--container");
   modal.classList.remove("hidden");
@@ -270,4 +263,30 @@ function closeCommentsModal() {
   console.log(comments.value); // this value can be stored where comments should be stored at the backend
 
   comments.value = "";
+}
+
+function setModalInfo(idInformation) {
+  console.log(idInformation);
+  document.querySelector(".name").innerHTML = idInformation.Employee;
+  document.querySelector(".timesheet_status").innerHTML = idInformation.Status;
+  document.querySelector(
+    ".processed_date"
+  ).innerHTML = `Processed Date : ${idInformation.ProcessedDate}`;
+  document.querySelector(
+    ".Weekending_date"
+  ).innerHTML = `Weekending Date ${idInformation.WeekendingDate}`;
+
+  document.querySelector(
+    ".ChargebilityRate"
+  ).innerHTML = `Chargebility Rate : ${idInformation.ChargebilityRate}$ / hr`;
+
+  document.querySelector(
+    ".TotalBillablehours"
+  ).innerHTML = `Total Billable hours : ${idInformation.TotalBillablehours} hrs`;
+  document.querySelector(
+    ".TotalTimeoffhours"
+  ).innerHTML = `Total Timeoff hours : ${idInformation.TotalTimeoffhours} hrs`;
+  document.querySelector(
+    ".Totalhours"
+  ).innerHTML = `Total hours : ${idInformation.Totalhours} hours`;
 }
