@@ -44,3 +44,22 @@ img.view {
 #tblData tr {
   cursor: pointer;
 }
+
+.comment_Section--container {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.comments_section {
+  width: 436px;
+  height: 134px;
+  background: rgba(15, 88, 239, 0.09);
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+}

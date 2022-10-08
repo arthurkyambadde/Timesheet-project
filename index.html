@@ -177,12 +177,41 @@
         </section>
 
         <div class="button-container">
-          <button class="secondary_button" id="rejectedButton" type="button">
+          <button
+            class="secondary_button"
+            id="openCommentsModal1"
+            type="button"
+          >
             Reject
           </button>
-          <button type="button" class="primary_button2" id="submitButton">
+          <button type="button" class="primary_button2" id="openCommentsModal2">
             Approve
           </button>
+        </div>
+        <div class="comment_Section--container hidden">
+          <textarea
+            class="comments_section"
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="button-container">
+            <button
+              class="secondary_button closeCommentsModal1"
+              id="rejectedButton "
+              type="button"
+            >
+              Reject
+            </button>
+            <button
+              type="button"
+              class="primary_button2 closeCommentsModal2"
+              id="submitButton "
+            >
+              Approve
+            </button>
+          </div>
         </div>
       </form>
     </div>
