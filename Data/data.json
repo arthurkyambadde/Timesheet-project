@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "1",
-      "CheckBoxIcon": "<input type='checkbox'  class='largerCheckbox' data-id='1' />",
+      "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='1' />",
       "Employee": "Arthur",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -11,7 +11,7 @@
       "Date Approved": "11/06/2022",
       "Processed": "Yes",
       "Status": "Approved",
-      "viewIcon": "<img src='../Assets/viewIcon.svg' alt='view icon' class='view'/>",
+      "viewIcon": "<button class='view' type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
       "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>"
     },
     {

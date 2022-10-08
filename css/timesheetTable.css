@@ -36,3 +36,11 @@ td {
   text-align: start;
   background: #d1d1d108;
 }
+
+img.view {
+  cursor: pointer;
+}
+
+#tblData tr {
+  cursor: pointer;
+}

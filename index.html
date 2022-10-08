@@ -9,6 +9,11 @@
 
     <link
       rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       type="text/css"
       href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
     />
@@ -24,6 +29,7 @@
     ></script>
 
     <script src="./main.js"></script>
+    <script src="modal.js"></script>
   </head>
   <body>
     <div class="timesheet_application">
@@ -180,8 +186,12 @@
     <form action="/modal" method="POST" id="modal">
       <div class="modal overlay hidden">
         <section class="modal_container">
-          <div class="return_arrow--container btn-close">
-            <img src="./Assets//returnArrow.svg" alt="return arrow" />
+          <div class="return_arrow--container">
+            <img
+              src="./Assets//returnArrow.svg"
+              alt="return arrow"
+              class="btn-close"
+            />
           </div>
           <div class="timesheet_details">
             <p class="employee_name">

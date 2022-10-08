@@ -45,6 +45,34 @@ $(document).ready(function () {
           { data: "Sunday" },
           { data: "Total" },
         ],
+        initComplete: function () {
+          const table = $("#tblData").DataTable();
+
+          $("#tblData tbody").on("click", "tr", function () {
+            // const data = table.row(this).data();
+            // alert("You clicked on " + data[0] + "'s row");
+
+            console.log("you clicked me");
+            const modal = document.querySelector(".modal");
+            const overlay = document.querySelector(".overlay");
+            const openModalBtn = document.querySelector("#tblData tbody tr");
+            const closeModalBtn = document.querySelector(".btn-close");
+
+            const openModal = function () {
+              modal.classList.remove("hidden");
+              overlay.classList.remove("hidden");
+            };
+
+            openModalBtn.addEventListener("click", openModal);
+
+            const closeModal = function () {
+              modal.classList.add("hidden");
+              overlay.classList.add("hidden");
+            };
+
+            closeModalBtn.addEventListener("click", closeModal);
+          });
+        },
       });
     });
 });
@@ -66,6 +94,14 @@ function renderTable() {
       { data: "viewIcon" },
       { data: "downloadIcon" },
     ],
+    initComplete: function () {
+      const table = $("#tblData").DataTable();
+
+      $("#tblData tbody").on("click", "tr", function () {
+        const data = table.row(this).data();
+        alert("You clicked on " + data[0] + "'s row");
+      });
+    },
   });
 }
 
@@ -108,7 +144,9 @@ $(document).ready(function () {
       $("#ModalSelectAll").is(":checked")
     );
   });
+});
 
+$(document).ready(function () {
   $("#submitButton").click(approveData);
   $("#rejectedButton").click(rejectData);
   $("#MsubmitButton").click(approveMData);
@@ -196,3 +234,5 @@ function rejectMData() {
 
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
+
+$(document).ready(function () {});
