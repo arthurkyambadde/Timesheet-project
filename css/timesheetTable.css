@@ -59,3 +59,11 @@ tbody tr {
   border: none;
   cursor: pointer;
 }
+
+#tblData thead > tr > th.sorting_asc:before {
+  content: "";
+}
+
+#tblData thead > tr > th.sorting_asc:after {
+  content: "";
+}
