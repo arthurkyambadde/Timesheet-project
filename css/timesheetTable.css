@@ -55,5 +55,7 @@ tbody tr {
 }
 
 #tblData tbody tr button {
+  background-color: #ffffff00;
   border: none;
+  cursor: pointer;
 }
