@@ -155,30 +155,6 @@ function approveData() {
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
 }
 
-//reject data function for table one
-
-// function rejectData() {
-//   const table = $("#tblData").DataTable();
-
-//   const rejectedData = [];
-
-//   table.$("input:checked").each(function (nodeIndex, nodeItem) {
-//     const id = nodeItem.dataset.id;
-//     const detail = source_data.find((value) => value.id === id);
-
-//     source_data = source_data.filter((data) => data.id !== id);
-//     rejectedData.push({ ...detail });
-//   });
-
-//   renderTable();
-
-//   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
-// }
-
-// renderTable();
-
-//approve data function for table two
-
 function approveMData() {
   const table = $("#ModalTblData").DataTable();
 
@@ -234,6 +210,7 @@ function closeModal() {
   selected_data = null;
 }
 
+// function for modal fields dynamic data
 function setModalInfo(idInformation) {
   console.log(idInformation);
   document.querySelector(".name").innerHTML = idInformation.Employee;
