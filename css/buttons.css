@@ -1,6 +1,7 @@
 .button-container {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -20,7 +21,7 @@
   cursor: pointer;
 }
 
-.secondary_button {
+/* .secondary_button {
   background: #ffffff;
   border: 2px solid #0f58ef;
   border-radius: 42px;
@@ -31,4 +32,4 @@
   font-size: 16px;
   color: #0063f7;
   cursor: pointer;
-}
+} */

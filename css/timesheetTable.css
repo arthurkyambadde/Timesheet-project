@@ -41,6 +41,19 @@ img.view {
   cursor: pointer;
 }
 
-#tblData tr {
+#tblData {
+  margin-top: 1px solid #9999;
+}
+
+.dataTables_filter {
+  padding-right: 30px;
+}
+
+tbody tr {
   cursor: pointer;
+  height: 10px;
+}
+
+#tblData tbody tr button {
+  border: none;
 }

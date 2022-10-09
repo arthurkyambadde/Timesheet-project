@@ -158,3 +158,8 @@
 .btn-close {
   cursor: pointer;
 }
+
+.closeModal_div {
+  width: 400px;
+  height: 100%;
+}
