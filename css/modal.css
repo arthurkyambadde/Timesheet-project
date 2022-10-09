@@ -173,3 +173,11 @@
     width: 1120px;
   }
 }
+
+#ModalTblData thead > tr > th.sorting_asc:before {
+  content: "";
+}
+
+#ModalTblData thead > tr > th.sorting_asc:after {
+  content: "";
+}
