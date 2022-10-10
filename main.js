@@ -9,6 +9,8 @@ $(document).ready(function () {
       source_data = req.data;
       $("#tblData").DataTable({
         data: source_data,
+        pageLength: 3,
+        lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
         columns: [
           { data: "CheckBoxIcon" },
           { data: "Employee" },
@@ -33,6 +35,8 @@ $(document).ready(function () {
       modal_data = req.data;
       $("#ModalTblData").DataTable({
         data: modal_data,
+        pageLength: 3,
+        lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
         columns: [
           { data: "CheckBoxIcon" },
           { data: "ProjectName" },

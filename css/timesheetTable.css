@@ -6,12 +6,6 @@
   margin: 0;
 }
 
-.dataTable {
-  height: 320px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 .timesheet_table--head {
   height: 45px;
   border-bottom: 2px solid rgba(153, 153, 153, 0.512);
