@@ -35,29 +35,25 @@ img.view {
   cursor: pointer;
 }
 
-#tblData {
-  margin-top: 1px solid #9999;
-}
-
-.dataTables_filter {
-  padding-right: 30px;
-}
-
-tbody tr {
+#tblData tr {
   cursor: pointer;
-  height: 10px;
 }
 
-#tblData tbody tr button {
-  background-color: #ffffff00;
+.comment_Section--container {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.comments_section {
+  width: 436px;
+  height: 134px;
+  background: rgba(15, 88, 239, 0.09);
+  border-radius: 8px;
+  padding: 20px;
   border: none;
-  cursor: pointer;
-}
-
-#tblData thead > tr > th.sorting_asc:before {
-  content: "";
-}
-
-#tblData thead > tr > th.sorting_asc:after {
-  content: "";
 }

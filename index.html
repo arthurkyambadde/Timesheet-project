@@ -18,10 +18,6 @@
       href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
     />
 
-    <!-- here -->
-
-    <!-- here -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -150,7 +146,7 @@
       <form action="POST">
         <section class="timesheet_table">
           <div class="dataTable">
-            <table id="tblData">
+            <table class="table1" id="tblData">
               <thead>
                 <tr>
                   <th>
@@ -177,34 +173,16 @@
         </section>
 
         <div class="button-container">
-          <button type="button" class="primary_button2" id="submitButton">
-            SUBMIT
+          <button class="secondary_button" id="rejectedButton" type="button">
+            Reject
           </button>
-        </div>
-        <div class="comment_Section--container hidden">
-          <textarea
-            class="comments_section"
-            name="comments"
-            id="comments"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <div class="button-container">
-            <button
-              class="secondary_button closeCommentsModal1"
-              id="rejectedButton "
-              type="button"
-            >
-              Reject
-            </button>
-            <button
-              type="button"
-              class="primary_button2 closeCommentsModal2"
-              id="submitButton "
-            >
-              Approve
-            </button>
-          </div>
+          <button
+            type="button"
+            class="primary_button2"
+            id="submitButtonselectAll"
+          >
+            Approve
+          </button>
         </div>
       </form>
     </div>

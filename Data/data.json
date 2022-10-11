@@ -1,26 +1,6 @@
 {
   "data": [
     {
-      "id": "1",
-      "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='1' />",
-      "Employee": "Arthur",
-      "Type": "Timesheet",
-      "Submitted": "Yes",
-      "Submission_Date": "11/07/2021",
-      "Approved/Rejected By": "Jane",
-      "Date Approved": "11/06/2022",
-      "Processed": "Yes",
-      "Status": "Approved",
-      "viewIcon": "<button data-id='1' class='view'  type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
-      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
-      "ProcessedDate": "22/8/2022",
-      "WeekendingDate": "12/06/2022",
-      "ChargebilityRate": "13",
-      "TotalBillablehours": "20:00 ",
-      "TotalTimeoffhours": "04:00 ",
-      "Totalhours": "24:00"
-    },
-    {
       "id": "2",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='2' />",
       "Employee": "Daniel",
@@ -239,6 +219,26 @@
       "TotalBillablehours": "16:00 ",
       "TotalTimeoffhours": "04:00 ",
       "Totalhours": "20:00"
+    },
+    {
+      "id": "1",
+      "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='1' />",
+      "Employee": "Arthur",
+      "Type": "Timesheet",
+      "Submitted": "Yes",
+      "Submission_Date": "11/07/2021",
+      "Approved/Rejected By": "Jane",
+      "Date Approved": "11/06/2022",
+      "Processed": "Yes",
+      "Status": "Approved",
+      "viewIcon": "<button data-id='1' class='view'  type='button'> <img src='../Assets/viewIcon.svg' alt='view icon'  /></button>",
+      "downloadIcon": "<img src='../Assets/dowloadIcon.svg' alt='download icon'/>",
+      "ProcessedDate": "22/8/2022",
+      "WeekendingDate": "12/06/2022",
+      "ChargebilityRate": "13",
+      "TotalBillablehours": "20:00 ",
+      "TotalTimeoffhours": "04:00 ",
+      "Totalhours": "24:00"
     }
   ]
 }

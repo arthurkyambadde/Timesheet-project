@@ -11,6 +11,10 @@ $(document).ready(function () {
         data: source_data,
         pageLength: 3,
         lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
+        columnDefs: [
+          { orderable: false, targets: [0, 9, 10] },
+          { orderable: true, targets: [1, 2, 3, 4, 5, 6, 7, 8] },
+        ],
         columns: [
           { data: "CheckBoxIcon" },
           { data: "Employee" },
@@ -37,6 +41,10 @@ $(document).ready(function () {
         data: modal_data,
         pageLength: 3,
         lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
+        columnDefs: [
+          { orderable: false, targets: [0] },
+          { orderable: true, targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+        ],
         columns: [
           { data: "CheckBoxIcon" },
           { data: "ProjectName" },
@@ -61,10 +69,10 @@ $(document).ready(function () {
           });
 
           const closeModalBtn = document.querySelector(".btn-close");
-          const closeModalDiv = document.querySelector(".closeModal_div");
-
-          closeModalDiv.addEventListener("click", closeModal);
           closeModalBtn.addEventListener("click", closeModal);
+
+          const closeModalDiv = document.querySelector(".closeModal_div");
+          closeModalDiv.addEventListener("click", closeModal);
         },
       });
     });
@@ -159,6 +167,30 @@ function approveData() {
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
 }
 
+//reject data function for table one
+
+function rejectData() {
+  const table = $("#tblData").DataTable();
+
+  const rejectedData = [];
+
+  table.$("input:checked").each(function (nodeIndex, nodeItem) {
+    const id = nodeItem.dataset.id;
+    const detail = source_data.find((value) => value.id === id);
+
+    source_data = source_data.filter((data) => data.id !== id);
+    rejectedData.push({ ...detail });
+  });
+
+  renderTable();
+
+  console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
+}
+
+renderTable();
+
+//approve data function for table two
+
 function approveMData() {
   const table = $("#ModalTblData").DataTable();
 
@@ -214,7 +246,22 @@ function closeModal() {
   selected_data = null;
 }
 
-// function for modal fields dynamic data
+//comments pop-up modal functions
+function openCommentsModal() {
+  const modal = document.querySelector(".comment_Section--container");
+  modal.classList.remove("hidden");
+}
+
+function closeCommentsModal() {
+  const modal = document.querySelector(".comment_Section--container");
+  modal.classList.add("hidden");
+  const comments = document.getElementById("comments");
+
+  console.log(comments.value); // this value can be stored where comments should be stored at the backend
+
+  comments.value = "";
+}
+
 function setModalInfo(idInformation) {
   console.log(idInformation);
   document.querySelector(".name").innerHTML = idInformation.Employee;
