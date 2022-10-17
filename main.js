@@ -299,4 +299,27 @@ function setModalInfo(idInformation) {
   } else if (timesheetStatus === "Pending") {
     document.querySelector(".timesheet_status").classList.add("purple_color");
   }
+
+  //remove colors from modal status
+  function removeColor() {
+    if (timesheetStatus === "Rejected") {
+      document.querySelector(".timesheet_status").classList.remove("red_color");
+    } else if (timesheetStatus === "Approved") {
+      document
+        .querySelector(".timesheet_status")
+        .classList.remove("green_color");
+    } else if (timesheetStatus === "Pending") {
+      document
+        .querySelector(".timesheet_status")
+        .classList.remove("purple_color");
+    }
+  }
+
+  document
+    .querySelector(".closeModal_div")
+    .addEventListener("click", removeColor);
+
+  document
+    .querySelector(".return_arrow--container")
+    .addEventListener("click", removeColor);
 }
