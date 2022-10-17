@@ -286,4 +286,17 @@ function setModalInfo(idInformation) {
   document.querySelector(
     ".Totalhours"
   ).innerHTML = `Total hours : ${idInformation.Totalhours} hours`;
+
+  // set status colors
+
+  const timesheetStatus = document.querySelector(".timesheet_status").innerHTML;
+  console.log(timesheetStatus);
+
+  if (timesheetStatus === "Rejected") {
+    document.querySelector(".timesheet_status").classList.add("red_color");
+  } else if (timesheetStatus === "Approved") {
+    document.querySelector(".timesheet_status").classList.add("green_color");
+  } else if (timesheetStatus === "Pending") {
+    document.querySelector(".timesheet_status").classList.add("purple_color");
+  }
 }
