@@ -57,3 +57,18 @@ img.view {
   padding: 20px;
   border: none;
 }
+
+#tblData input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid blue;
+  transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+#tblData button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}

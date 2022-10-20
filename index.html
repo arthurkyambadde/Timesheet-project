@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/app.css" />
     <title>Timesheet application</title>
 
+    <!-- calendar -->
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <!-- calendar -->
+
     <link
       rel="stylesheet"
       href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
@@ -58,31 +63,7 @@
       <section class="statistics">
         <div class="statistics_calendar">
           <div class="calendar">
-            <div class="calendar-header">
-              <span class="month-picker" id="month-picker">February</span>
-              <div class="year-picker">
-                <span class="year-change" id="prev-year">
-                  <pre><</pre>
-                </span>
-                <span id="year">2021</span>
-                <span class="year-change" id="next-year">
-                  <pre>></pre>
-                </span>
-              </div>
-            </div>
-            <div class="calendar-body">
-              <div class="calendar-week-day">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-              </div>
-              <div class="calendar-days" id="Calendar_days--container"></div>
-            </div>
-            <div class="month-list"></div>
+            <div id="demo-week-select"></div>
           </div>
         </div>
         <div class="statistics_details">
@@ -270,6 +251,11 @@
           </div>
         </section>
       </div>
+    </form>
+    <form action="POST" class="name_modal">
+      <p class="employee_name">
+        Employee Name: <span class="name">Sonko Jimmy</span>
+      </p>
     </form>
     <script src="calendar.js"></script>
     <script src="statistics.js"></script>

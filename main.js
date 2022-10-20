@@ -290,7 +290,6 @@ function setModalInfo(idInformation) {
   // set status colors
 
   const timesheetStatus = document.querySelector(".timesheet_status").innerHTML;
-  console.log(timesheetStatus);
 
   if (timesheetStatus === "Rejected") {
     document.querySelector(".timesheet_status").classList.add("red_color");
@@ -300,7 +299,7 @@ function setModalInfo(idInformation) {
     document.querySelector(".timesheet_status").classList.add("purple_color");
   }
 
-  //remove colors from modal status
+  //remove colors from modal
   function removeColor() {
     if (timesheetStatus === "Rejected") {
       document.querySelector(".timesheet_status").classList.remove("red_color");

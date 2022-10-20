@@ -177,9 +177,33 @@
 }
 
 .red_color {
-  color: red;
+  color: #ff0000;
 }
 
 .green_color {
   color: #219653;
+}
+
+#ModalTblData input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.name_link {
+  padding: 4px 8px;
+  border: none;
+  margin-left: 8px;
+}
+
+/* ///Name modal css */
+
+.name_modal {
+  height: 100vh;
+  width: 100vw;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
 }
