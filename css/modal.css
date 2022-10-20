@@ -183,3 +183,11 @@
 .green_color {
   color: #219653;
 }
+
+#ModalTblData input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
