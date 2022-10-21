@@ -68,11 +68,23 @@ $(document).ready(function () {
             openModal();
           });
 
+          $("#ModalTblData tbody").on("click", ".name_link", function (e) {
+            const selectedID = this.dataset.id;
+
+            selected_data = source_data.find((item) => item.id === selectedID);
+            console.log(selected_data);
+            setModalInfo(selected_data);
+            closeModal();
+          });
+
           const closeModalBtn = document.querySelector(".btn-close");
           closeModalBtn.addEventListener("click", closeModal);
 
           const closeModalDiv = document.querySelector(".closeModal_div");
           closeModalDiv.addEventListener("click", closeModal);
+
+          // const nameModal = document.querySelector(".name_link");
+          // nameModal.addEventListener("click", closeModal);
         },
       });
     });
