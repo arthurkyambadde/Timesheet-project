@@ -192,7 +192,7 @@
   transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
 }
 
-.name_link {
+.namelink {
   padding: 4px 8px;
   border: none;
   margin-left: 8px;
@@ -207,4 +207,34 @@
   padding: 56px;
   display: flex;
   flex-direction: column;
+}
+
+.hidden_modal {
+  display: none;
+}
+
+.name_modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+.nameModal_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.closeNameModal {
+  cursor: pointer;
 }

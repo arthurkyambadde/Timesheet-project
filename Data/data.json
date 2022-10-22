@@ -3,7 +3,7 @@
     {
       "id": "2",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='2' />",
-      "Employee": "<span class='name_link'  data-id='2'>Daniel</span>",
+      "Employee": "<button type='button' class='namelink'  data-id='2'>Daniel</button>",
       "Type": "Timesheet",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -23,7 +23,7 @@
     {
       "id": "3",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='3' />",
-      "Employee": "<span class='name_link'  data-id='3'>Jimmy</span>",
+      "Employee": "<button type='button' class='namelink'  data-id='3'>Jimmy</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -43,7 +43,7 @@
     {
       "id": "4",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='4' />",
-      "Employee": "<span class='name_link' data-id='4'>Junior</span>",
+      "Employee": "<button type='button' class='namelink' data-id='4'>Junior</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -63,7 +63,7 @@
     {
       "id": "5",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='5' />",
-      "Employee": "<span class='name_link' data-id='5'>Jordan</span>",
+      "Employee": "<button type='button' class='namelink' data-id='5'>Jordan</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -83,7 +83,7 @@
     {
       "id": "6",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='6' />",
-      "Employee": "<span class='name_link' data-id='6'>Patricia</span>",
+      "Employee": "<button type='button' class='namelink' data-id='6'>Patricia</button>",
       "Type": "Timesheet",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -103,7 +103,7 @@
     {
       "id": "7",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='7' />",
-      "Employee": "<span class='name_link' data-id='7'>Dennis</span>",
+      "Employee": "<button type='button' class='namelink' data-id='7'>Dennis</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -123,7 +123,7 @@
     {
       "id": "8",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='8' />",
-      "Employee": "<span class='name_link' data-id='8'>Dennis</span>",
+      "Employee": "<button type='button' class='namelink' data-id='8'>Dennis</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -143,7 +143,7 @@
     {
       "id": "9",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='9' />",
-      "Employee": "<span class='name_link' data-id='9'>Jordan</span>",
+      "Employee": "<button type='button' class='namelink' data-id='9'>Jordan</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -163,7 +163,7 @@
     {
       "id": "10",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='10' />",
-      "Employee": "<span class='name_link' data-id='10' >Patricia</span>",
+      "Employee": "<button type='button' class='namelink' data-id='10' >Patricia</button>",
       "Type": "Adjustment",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -183,7 +183,7 @@
     {
       "id": "11",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='11' />",
-      "Employee": "<span class='name_link' data-id='11'>Jimmy</span>",
+      "Employee": "<button type='button' class='namelink' data-id='11'>Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -203,7 +203,7 @@
     {
       "id": "12",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='12' />",
-      "Employee": "<span class='name_link' data-id='12'>Dennis</span>",
+      "Employee": "<button type='button' class='namelink' data-id='12'>Dennis</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -223,7 +223,7 @@
     {
       "id": "1",
       "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='1' />",
-      "Employee": "<span class='name_link' data-id='1'>Arthur</span>",
+      "Employee": "<button type='button' class='namelink' data-id='1'>Arthur</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "11/07/2021",
@@ -243,7 +243,7 @@
     {
       "id": "5",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='15' />",
-      "Employee": "<span class='name_link' data-id='15'>Jordan</span>",
+      "Employee": "<button type='button' class='namelink' data-id='15'>Jordan</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -263,7 +263,7 @@
     {
       "id": "6",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='16' />",
-      "Employee": "<span class='name_link' data-id='16'>Arthur</span>",
+      "Employee": "<button type='button' class='namelink' data-id='16'>Arthur</button>",
       "Type": "Timesheet",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -283,7 +283,7 @@
     {
       "id": "7",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='17' />",
-      "Employee": "<span class='name_link' data-id='17' >Junior</span>",
+      "Employee": "<button type='button' class='namelink' data-id='17' >Junior</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -303,7 +303,7 @@
     {
       "id": "8",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='18' />",
-      "Employee": "<span class='name_link' data-id='18'>Resty</span>",
+      "Employee": "<button type='button' class='namelink' data-id='18'>Resty</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -323,7 +323,7 @@
     {
       "id": "9",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='19' />",
-      "Employee": "<span class='name_link' data-id='19' >Arthur</span>",
+      "Employee": "<button type='button' class='namelink' data-id='19' >Arthur</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -343,7 +343,7 @@
     {
       "id": "10",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='20' />",
-      "Employee": "<span class='name_link' data-id='20'>Daniel</span>",
+      "Employee": "<button type='button' class='namelink' data-id='20'>Daniel</button>",
       "Type": "Adjustment",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -363,7 +363,7 @@
     {
       "id": "11",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='21' />",
-      "Employee": "<span class='name_link' data-id='21'>Jimmy</span>",
+      "Employee": "<button type='button' class='namelink' data-id='21'>Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -383,7 +383,7 @@
     {
       "id": "12",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='22' />",
-      "Employee": "<span class='name_link' data-id='22' >Nickson</span>",
+      "Employee": "<button type='button' class='namelink' data-id='22' >Nickson</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -403,7 +403,7 @@
     {
       "id": "1",
       "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='25' />",
-      "Employee": "<span class='name_link' data-id='25'>Tuba</span>",
+      "Employee": "<button type='button' class='namelink' data-id='25'>Tuba</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "11/07/2021",
@@ -423,7 +423,7 @@
     {
       "id": "5",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='26' />",
-      "Employee": "<span class='name_link' data-id='26'  >Daniel</span>",
+      "Employee": "<button type='button' class='namelink' data-id='26'  >Daniel</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -443,7 +443,7 @@
     {
       "id": "6",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='27' />",
-      "Employee": "<span class='name_link' data-id='27'>Busuuti</span>",
+      "Employee": "<button type='button' class='namelink' data-id='27'>Busuuti</button>",
       "Type": "Timesheet",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -463,7 +463,7 @@
     {
       "id": "7",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='28' />",
-      "Employee": "<span class='name_link' data-id='28'>Jeremy</span>",
+      "Employee": "<button type='button' class='namelink' data-id='28'>Jeremy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -483,7 +483,7 @@
     {
       "id": "8",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='29' />",
-      "Employee": "<span class='name_link' data-id='29'>Nickson</span>",
+      "Employee": "<button type='button' class='namelink' data-id='29'>Nickson</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -503,7 +503,7 @@
     {
       "id": "9",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='30' />",
-      "Employee": "<span class='name_link' data-id='30'>Jane</span>",
+      "Employee": "<button type='button' class='namelink' data-id='30'>Jane</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -523,7 +523,7 @@
     {
       "id": "10",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='31' />",
-      "Employee": "<span class='name_link' data-id='31'>Darsha</span>",
+      "Employee": "<button type='button' class='namelink' data-id='31'>Darsha</button>",
       "Type": "Adjustment",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -543,7 +543,7 @@
     {
       "id": "11",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='32' />",
-      "Employee": "<span class='name_link' data-id='32'  >Jimmy</span>",
+      "Employee": "<button type='button' class='namelink' data-id='32'  >Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -563,7 +563,7 @@
     {
       "id": "12",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='34' />",
-      "Employee": "<span class='name_link' data-id='34'>Darsha</span>",
+      "Employee": "<button type='button' class='namelink' data-id='34'>Darsha</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -583,7 +583,7 @@
     {
       "id": "1",
       "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='35' />",
-      "Employee": "<button class='name_link' data-id='35' >Resty</button>",
+      "Employee": "<button type='button' class='namelink' data-id='35' >Resty</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "11/07/2021",
@@ -603,7 +603,7 @@
     {
       "id": "5",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='37' />",
-      "Employee": "<button class='name_link' data-id='37'>Saka</button>",
+      "Employee": "<button type='button' class='namelink' data-id='37'>Saka</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -623,7 +623,7 @@
     {
       "id": "6",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='39' />",
-      "Employee": "<button class='name_link' data-id='39' >Gabriel</button>",
+      "Employee": "<button type='button' class='namelink' data-id='39' >Gabriel</button>",
       "Type": "Timesheet",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -643,7 +643,7 @@
     {
       "id": "7",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='40' />",
-      "Employee": "<button class='name_link' data-id='40' >Hesus</button>",
+      "Employee": "<button type='button' class='namelink' data-id='40' >Hesus</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -663,7 +663,7 @@
     {
       "id": "8",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='41' />",
-      "Employee": "<button class='name_link' data-id='41'>Gabriel</button>",
+      "Employee": "<button type='button' class='namelink' data-id='41'>Gabriel</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -683,7 +683,7 @@
     {
       "id": "9",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='49' />",
-      "Employee": "<button class='name_link' data-id='49' >Saliba</button>",
+      "Employee": "<button type='button' class='namelink' data-id='49' >Saliba</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -703,7 +703,7 @@
     {
       "id": "10",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='42' />",
-      "Employee": "<button class='name_link' data-id='42'>Viera</button>",
+      "Employee": "<button type='button' class='namelink' data-id='42'>Viera</button>",
       "Type": "Adjustment",
       "Submitted": "No",
       "Submission_Date": "1/04/2021",
@@ -723,7 +723,7 @@
     {
       "id": "11",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='45' />",
-      "Employee": "<button class='name_link' data-id='45' >Ericksen</button>",
+      "Employee": "<button type='button' class='namelink' data-id='45' >Ericksen</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "19/02/2021",
@@ -743,7 +743,7 @@
     {
       "id": "12",
       "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='43' />",
-      "Employee": "<button class='name_link' data-id='43' >Jansen</button>",
+      "Employee": "<button type='button' class='namelink' data-id='43' >Jansen</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
       "Submission_Date": "1/04/2021",
@@ -763,7 +763,7 @@
     {
       "id": "1",
       "CheckBoxIcon": " <input type='checkbox'  class='largerCheckbox' data-id='44' />",
-      "Employee": "<button class='name_link' data-id='44' >Ruben</button>",
+      "Employee": "<button type='button' class='namelink' data-id='44' >Ruben</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
       "Submission_Date": "11/07/2021",

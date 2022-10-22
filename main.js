@@ -1,6 +1,11 @@
 let source_data = null;
 let modal_data = null;
 let selected_data = null;
+let name_modal__data = null;
+
+$(document).ready(function () {
+  $("#nameModal").DataTable();
+});
 
 $(document).ready(function () {
   fetch("./Data/data.json")
@@ -28,6 +33,20 @@ $(document).ready(function () {
           { data: "viewIcon" },
           { data: "downloadIcon" },
         ],
+        initComplete: function () {
+          $("#tblData tbody ").on("click", ".view", function (e) {
+            const selectedID = this.dataset.id;
+            selected_data = source_data.find((item) => item.id === selectedID);
+            setModalInfo(selected_data);
+            openModal();
+          });
+
+          const closeModalBtn = document.querySelector(".btn-close");
+          closeModalBtn.addEventListener("click", closeModal);
+
+          const closeModalDiv = document.querySelector(".closeModal_div");
+          closeModalDiv.addEventListener("click", closeModal);
+        },
       });
     });
 });
@@ -59,30 +78,20 @@ $(document).ready(function () {
           { data: "Total" },
         ],
         initComplete: function () {
-          $("#tblData tbody").on("click", ".view", function (e) {
-            const selectedID = this.dataset.id;
+          $(".name").click(function (e) {
+            const object = e.target;
+            const selectedID = object.dataset.id;
 
-            selected_data = source_data.find((item) => item.id === selectedID);
-            console.log(selected_data);
-            setModalInfo(selected_data);
-            openModal();
-          });
-
-          $("#ModalTblData tbody").on("click", ".name_link", function (e) {
-            const selectedID = this.dataset.id;
-
-            selected_data = source_data.find((item) => item.id === selectedID);
-            console.log(selected_data);
-            setModalInfo(selected_data);
+            console.log(selectedID);
+            name_modal__data = source_data.find(
+              (item) => item.id === selectedID
+            );
+            console.log(name_modal__data);
+            setNameModalInfomation(name_modal__data);
             closeModal();
+
+            openNameModal();
           });
-
-          const closeModalBtn = document.querySelector(".btn-close");
-          closeModalBtn.addEventListener("click", closeModal);
-
-          const closeModalDiv = document.querySelector(".closeModal_div");
-          closeModalDiv.addEventListener("click", closeModal);
-
           // const nameModal = document.querySelector(".name_link");
           // nameModal.addEventListener("click", closeModal);
         },
@@ -157,6 +166,7 @@ $(document).ready(function () {
   $("#rejectedButton").click(rejectData);
   $("#MsubmitButton").click(approveMData);
   $("#MrejectedButton").click(rejectMData);
+  $(".closeNameModal").click(closeNameModal);
 });
 
 //approve data functions for table one
@@ -258,24 +268,7 @@ function closeModal() {
   selected_data = null;
 }
 
-//comments pop-up modal functions
-function openCommentsModal() {
-  const modal = document.querySelector(".comment_Section--container");
-  modal.classList.remove("hidden");
-}
-
-function closeCommentsModal() {
-  const modal = document.querySelector(".comment_Section--container");
-  modal.classList.add("hidden");
-  const comments = document.getElementById("comments");
-
-  console.log(comments.value); // this value can be stored where comments should be stored at the backend
-
-  comments.value = "";
-}
-
 function setModalInfo(idInformation) {
-  console.log(idInformation);
   document.querySelector(".name").innerHTML = idInformation.Employee;
   document.querySelector(".timesheet_status").innerHTML = idInformation.Status;
   document.querySelector(
@@ -333,4 +326,26 @@ function setModalInfo(idInformation) {
   document
     .querySelector(".return_arrow--container")
     .addEventListener("click", removeColor);
+}
+
+//set name modal information function
+
+function setNameModalInfomation(information) {
+  console.log("information set #####################");
+}
+
+//open name modal functions
+
+function openNameModal() {
+  const modal = document.querySelector(".name_modal");
+  const overlay = document.querySelector(".name_modal__overlay");
+  modal.classList.remove("hidden_modal");
+  overlay.classList.remove("hidden_modal");
+}
+
+function closeNameModal() {
+  const modal = document.querySelector(".name_modal");
+  const overlay = document.querySelector(".name_modal__overlay");
+  modal.classList.add("hidden_modal");
+  overlay.classList.add("hidden_modal");
 }
