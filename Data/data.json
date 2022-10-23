@@ -2,7 +2,7 @@
   "data": [
     {
       "id": "2",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='2' />",
+      "CheckBoxIcon": "<input type='checkbox' checked='checked' class='largerCheckbox' data-id='2' />",
       "Employee": "<button type='button' class='namelink'  data-id='2'>Daniel</button>",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -42,7 +42,7 @@
     },
     {
       "id": "4",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='4' />",
+      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='4' checked='checked' />",
       "Employee": "<button type='button' class='namelink' data-id='4'>Junior</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
