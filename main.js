@@ -15,7 +15,7 @@ $(document).ready(function () {
       $("#tblData").DataTable({
         data: source_data,
         pageLength: 3,
-        lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
+        lengthMenu: [5, 10, 20, 50, 100, 200, 500],
         columnDefs: [
           { orderable: false, targets: [0, 9, 10] },
           { orderable: true, targets: [1, 2, 3, 4, 5, 6, 7, 8] },
@@ -167,6 +167,7 @@ $(document).ready(function () {
   $("#MsubmitButton").click(approveMData);
   $("#MrejectedButton").click(rejectMData);
   $(".closeNameModal").click(closeNameModal);
+  $(".name_modal__overlay").click(closeNameModal);
 });
 
 //approve data functions for table one
@@ -348,4 +349,11 @@ function closeNameModal() {
   const overlay = document.querySelector(".name_modal__overlay");
   modal.classList.add("hidden_modal");
   overlay.classList.add("hidden_modal");
+  openModal();
 }
+
+// function setCheckBoxColor() {
+//   if(){
+
+//   }
+// }
