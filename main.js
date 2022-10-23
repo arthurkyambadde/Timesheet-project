@@ -2,6 +2,7 @@ let source_data = null;
 let modal_data = null;
 let selected_data = null;
 let name_modal__data = null;
+let nameModal_data = null;
 
 $(document).ready(function () {
   $("#nameModal").DataTable();
@@ -352,8 +353,15 @@ function closeNameModal() {
   openModal();
 }
 
-// function setCheckBoxColor() {
-//   if(){
-
-//   }
-// }
+(function () {
+  fetch("./Data/data.json")
+    .then((res) => res.json())
+    .then((req) => {
+      nameModal_data = req.data;
+      nameModal_data.forEach(function (item) {
+        if (item.Status === "Pending") {
+          console.log(item);
+        }
+      });
+    });
+})();
