@@ -82,7 +82,7 @@
     },
     {
       "id": "6",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='6' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='6' />",
       "Employee": "<button type='button' class='namelink' data-id='6'>Patricia</button>",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -102,7 +102,7 @@
     },
     {
       "id": "7",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' style={accent-color: setColor;} data-id='7' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' style={accent-color: setColor;} data-id='7' />",
       "Employee": "<button type='button' class='namelink' data-id='7'>Test</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -142,7 +142,7 @@
     },
     {
       "id": "9",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='9' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='9' />",
       "Employee": "<button type='button' class='namelink' data-id='9'>Jordan</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -162,7 +162,7 @@
     },
     {
       "id": "10",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='10' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='10' />",
       "Employee": "<button type='button' class='namelink' data-id='10' >Patricia</button>",
       "Type": "Adjustment",
       "Submitted": "No",
@@ -182,7 +182,7 @@
     },
     {
       "id": "11",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='11' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='11' />",
       "Employee": "<button type='button' class='namelink' data-id='11'>Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -242,7 +242,7 @@
     },
     {
       "id": "5",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='15' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='15' />",
       "Employee": "<button type='button' class='namelink' data-id='15'>Jordan</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -262,7 +262,7 @@
     },
     {
       "id": "6",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='16' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='16' />",
       "Employee": "<button type='button' class='namelink' data-id='16'>Arthur</button>",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -282,7 +282,7 @@
     },
     {
       "id": "7",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='17' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='17' />",
       "Employee": "<button type='button' class='namelink' data-id='17' >Junior</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -322,7 +322,7 @@
     },
     {
       "id": "9",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='19' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='19' />",
       "Employee": "<button type='button' class='namelink' data-id='19' >Arthur</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -342,7 +342,7 @@
     },
     {
       "id": "10",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='20' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='20' />",
       "Employee": "<button type='button' class='namelink' data-id='20'>Daniel</button>",
       "Type": "Adjustment",
       "Submitted": "No",
@@ -362,7 +362,7 @@
     },
     {
       "id": "11",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='21' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='21' />",
       "Employee": "<button type='button' class='namelink' data-id='21'>Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -422,7 +422,7 @@
     },
     {
       "id": "5",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='26' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='26' />",
       "Employee": "<button type='button' class='namelink' data-id='26'  >Daniel</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -442,7 +442,7 @@
     },
     {
       "id": "6",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='27' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='27' />",
       "Employee": "<button type='button' class='namelink' data-id='27'>Busuuti</button>",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -462,7 +462,7 @@
     },
     {
       "id": "7",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='28' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='28' />",
       "Employee": "<button type='button' class='namelink' data-id='28'>Jeremy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -502,7 +502,7 @@
     },
     {
       "id": "9",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='30' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='30' />",
       "Employee": "<button type='button' class='namelink' data-id='30'>Jane</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -522,7 +522,7 @@
     },
     {
       "id": "10",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='31' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='31' />",
       "Employee": "<button type='button' class='namelink' data-id='31'>Darsha</button>",
       "Type": "Adjustment",
       "Submitted": "No",
@@ -542,7 +542,7 @@
     },
     {
       "id": "11",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='32' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='32' />",
       "Employee": "<button type='button' class='namelink' data-id='32'  >Jimmy</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -602,7 +602,7 @@
     },
     {
       "id": "5",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='37' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='37' />",
       "Employee": "<button type='button' class='namelink' data-id='37'>Saka</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -622,7 +622,7 @@
     },
     {
       "id": "6",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='39' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='39' />",
       "Employee": "<button type='button' class='namelink' data-id='39' >Gabriel</button>",
       "Type": "Timesheet",
       "Submitted": "No",
@@ -642,7 +642,7 @@
     },
     {
       "id": "7",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='40' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='40' />",
       "Employee": "<button type='button' class='namelink' data-id='40' >Hesus</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
@@ -682,7 +682,7 @@
     },
     {
       "id": "9",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='49' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='49' />",
       "Employee": "<button type='button' class='namelink' data-id='49' >Saliba</button>",
       "Type": "Adjustment",
       "Submitted": "Yes",
@@ -702,7 +702,7 @@
     },
     {
       "id": "10",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='42' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: red;' class='largerCheckbox' data-id='42' />",
       "Employee": "<button type='button' class='namelink' data-id='42'>Viera</button>",
       "Type": "Adjustment",
       "Submitted": "No",
@@ -722,7 +722,7 @@
     },
     {
       "id": "11",
-      "CheckBoxIcon": "<input type='checkbox' class='largerCheckbox' data-id='45' />",
+      "CheckBoxIcon": "<input type='checkbox' style='accent-color: #cb52e4; class='largerCheckbox' data-id='45' />",
       "Employee": "<button type='button' class='namelink' data-id='45' >Ericksen</button>",
       "Type": "Timesheet",
       "Submitted": "Yes",
