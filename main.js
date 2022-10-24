@@ -1,13 +1,14 @@
+// Data storage variables
 let source_data = null;
 let modal_data = null;
 let selected_data = null;
-let name_modal__data = null;
-let nameModal_data = null;
 
+// Name modal DataTabble
 $(document).ready(function () {
   $("#nameModal").DataTable();
 });
 
+// Main page datatable
 $(document).ready(function () {
   fetch("./Data/data.json")
     .then((res) => res.json())
@@ -52,6 +53,7 @@ $(document).ready(function () {
     });
 });
 
+// Main modal datatable
 $(document).ready(function () {
   fetch("./Data/modalData.json")
     .then((res) => res.json())
@@ -87,19 +89,16 @@ $(document).ready(function () {
             name_modal__data = source_data.find(
               (item) => item.id === selectedID
             );
-            console.log(name_modal__data);
-            setNameModalInfomation(name_modal__data);
             closeModal();
 
             openNameModal();
           });
-          // const nameModal = document.querySelector(".name_link");
-          // nameModal.addEventListener("click", closeModal);
         },
       });
     });
 });
 
+// MAin page datatable reloading
 function renderTable() {
   $("#tblData").DataTable().destroy();
   $("#tblData").DataTable({
@@ -121,6 +120,7 @@ function renderTable() {
   });
 }
 
+// Main modal datatable reload
 function renderModalTable() {
   $("#ModalTblData").DataTable().destroy();
   $("#ModalTblData").DataTable({
@@ -141,6 +141,7 @@ function renderModalTable() {
   });
 }
 
+// Checkbox checkall function for main page
 $(document).ready(function () {
   $("#selectAll").click(function () {
     $("table.table1 input[type=checkbox]").prop(
@@ -148,11 +149,9 @@ $(document).ready(function () {
       $("#selectAll").is(":checked")
     );
   });
-
-  $("#submitButtonselectAll").click(approveData);
-  $("#rejectedButton").click(rejectData);
 });
 
+// Checkbox checkall function for main modal
 $(document).ready(function () {
   $("#ModalSelectAll").click(function () {
     $("table.table2 input[type=checkbox]").prop(
@@ -162,16 +161,23 @@ $(document).ready(function () {
   });
 });
 
+// On click callbacks
 $(document).ready(function () {
-  $("#submitButton").click(approveData);
+  // Approve buton function for approving data for main page
+  $("#submitButtonselectAll").click(approveData);
+  // Reject button function for rejecting data for main page
   $("#rejectedButton").click(rejectData);
+  // Reject buton function for approving data for main modal
+  $("#rejectedButton").click(rejectData);
+  // Approve buton function for approving data for main modal
   $("#MsubmitButton").click(approveMData);
-  $("#MrejectedButton").click(rejectMData);
+  // Close modal functionality icon
   $(".closeNameModal").click(closeNameModal);
+  // Close modal functionality ovalay when clicked
   $(".name_modal__overlay").click(closeNameModal);
 });
 
-//approve data functions for table one
+//approve data functions for main page Datatable
 
 function approveData() {
   const table = $("#tblData").DataTable();
@@ -186,12 +192,13 @@ function approveData() {
     approvedData.push({ ...detail });
   });
 
+  // rerender and reload after approval
   renderTable();
 
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
 }
 
-//reject data function for table one
+//reject data function for main page  Datatable
 
 function rejectData() {
   const table = $("#tblData").DataTable();
@@ -206,15 +213,13 @@ function rejectData() {
     rejectedData.push({ ...detail });
   });
 
+  // rerender and reload after rejection
   renderTable();
 
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
 
-renderTable();
-
-//approve data function for table two
-
+//approve data function for main modal Datatable
 function approveMData() {
   const table = $("#ModalTblData").DataTable();
 
@@ -228,6 +233,7 @@ function approveMData() {
     approvedData.push({ ...detail });
   });
 
+  // rerender and reload after approval
   renderModalTable();
 
   console.log(approvedData); // This data can now be sent to your preffered storage for approved data
@@ -248,13 +254,13 @@ function rejectMData() {
     rejectedData.push({ ...detail });
   });
 
+  // rerender and reload after rejection
   renderModalTable();
 
   console.log(rejectedData); // This data can now be sent to your preffered storage for rejected data
 }
 
-//row data modal functions
-
+// Function for opening main modal
 function openModal() {
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
@@ -262,6 +268,7 @@ function openModal() {
   overlay.classList.remove("hidden");
 }
 
+// Function for closing main modal
 function closeModal() {
   const modal = document.querySelector(".modal");
   const overlay = document.querySelector(".overlay");
@@ -270,32 +277,33 @@ function closeModal() {
   selected_data = null;
 }
 
+// Function for setting main modal header information
 function setModalInfo(idInformation) {
   document.querySelector(".name").innerHTML = idInformation.Employee;
-  document.querySelector(".timesheet_status").innerHTML = idInformation.Status;
+  document.querySelector(".timesheet_status").textContent =
+    idInformation.Status;
   document.querySelector(
     ".processed_date"
-  ).innerHTML = `Processed Date : ${idInformation.ProcessedDate}`;
+  ).textContent = `Processed Date : ${idInformation.ProcessedDate}`;
   document.querySelector(
     ".Weekending_date"
-  ).innerHTML = `Weekending Date ${idInformation.WeekendingDate}`;
+  ).textContent = `Weekending Date ${idInformation.WeekendingDate}`;
 
   document.querySelector(
     ".ChargebilityRate"
-  ).innerHTML = `Chargebility Rate : ${idInformation.ChargebilityRate}$ / hr`;
+  ).textContent = `Chargebility Rate : ${idInformation.ChargebilityRate}$ / hr`;
 
   document.querySelector(
     ".TotalBillablehours"
-  ).innerHTML = `Total Billable hours : ${idInformation.TotalBillablehours} hrs`;
+  ).textContent = `Total Billable hours : ${idInformation.TotalBillablehours} hrs`;
   document.querySelector(
     ".TotalTimeoffhours"
-  ).innerHTML = `Total Timeoff hours : ${idInformation.TotalTimeoffhours} hrs`;
+  ).textContent = `Total Timeoff hours : ${idInformation.TotalTimeoffhours} hrs`;
   document.querySelector(
     ".Totalhours"
-  ).innerHTML = `Total hours : ${idInformation.Totalhours} hours`;
+  ).textContent = `Total hours : ${idInformation.Totalhours} hours`;
 
-  // set status colors
-
+  // Setting colors for timesheet status
   const timesheetStatus = document.querySelector(".timesheet_status").innerHTML;
 
   if (timesheetStatus === "Rejected") {
@@ -306,7 +314,7 @@ function setModalInfo(idInformation) {
     document.querySelector(".timesheet_status").classList.add("purple_color");
   }
 
-  //remove colors from modal
+  //remove colors from modal when closed to reload color
   function removeColor() {
     if (timesheetStatus === "Rejected") {
       document.querySelector(".timesheet_status").classList.remove("red_color");
@@ -321,10 +329,12 @@ function setModalInfo(idInformation) {
     }
   }
 
+  // Closing main modal using overlay
   document
     .querySelector(".closeModal_div")
     .addEventListener("click", removeColor);
 
+  // Closing main modal using return arrow
   document
     .querySelector(".return_arrow--container")
     .addEventListener("click", removeColor);
@@ -332,12 +342,7 @@ function setModalInfo(idInformation) {
 
 //set name modal information function
 
-function setNameModalInfomation(information) {
-  console.log("information set #####################");
-}
-
 //open name modal functions
-
 function openNameModal() {
   const modal = document.querySelector(".name_modal");
   const overlay = document.querySelector(".name_modal__overlay");
@@ -345,6 +350,7 @@ function openNameModal() {
   overlay.classList.remove("hidden_modal");
 }
 
+//close name modal functions
 function closeNameModal() {
   const modal = document.querySelector(".name_modal");
   const overlay = document.querySelector(".name_modal__overlay");
@@ -353,15 +359,65 @@ function closeNameModal() {
   openModal();
 }
 
-(function () {
+// ######################################################
+// ######################################################
+// Imediately call function on window object
+window.loadCardData();
+
+// Data storage variables
+let statisticsData;
+const pending = [];
+const approved = [];
+const rejected = [];
+
+// Function for setting statistics card data
+async function loadCardData() {
+  // Fetch data from json object
   fetch("./Data/data.json")
     .then((res) => res.json())
-    .then((req) => {
-      nameModal_data = req.data;
-      nameModal_data.forEach(function (item) {
-        if (item.Status === "Pending") {
-          console.log(item);
+    .then((dataObject) => {
+      // Set statistics data
+      statisticsData = dataObject.data;
+      const quantityOfTimesheets = statisticsData.length;
+
+      document.getElementById("submitted").textContent = statisticsData.length;
+
+      statisticsData.forEach((item) => {
+        if (item.Status === "Approved") {
+          approved.push(item);
+
+          percentage = Math.floor(
+            (approved.length / quantityOfTimesheets) * 100
+          );
+
+          document.getElementById("approved").textContent = approved.length;
+
+          document.getElementById(
+            "approvedperc"
+          ).textContent = `${percentage}%`;
+        } else if (item.Status === "Rejected") {
+          rejected.push(item);
+
+          percentage = Math.floor(
+            (rejected.length / quantityOfTimesheets) * 100
+          );
+
+          document.getElementById("rejected").textContent = rejected.length;
+
+          document.getElementById(
+            "rejectedperc"
+          ).textContent = `${percentage}%`;
+        } else if (item.Status === "Pending") {
+          pending.push(item);
+
+          percentage = Math.floor(
+            (pending.length / quantityOfTimesheets) * 100
+          );
+
+          document.getElementById("pending").textContent = pending.length;
+
+          document.getElementById("pendingperc").textContent = `${percentage}%`;
         }
       });
     });
-})();
+}
