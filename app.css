@@ -1,0 +1,655 @@
+/* Page reset styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS";
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Application global styles */
+.timesheet_application {
+  margin: 0 30px;
+  padding: 30px 0;
+}
+
+/* statistics cards styles */
+.statistics {
+  height: 270px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.statistics_calendar {
+  height: 100%;
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics_details--container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 8px 0;
+}
+
+.statistics_details {
+  width: calc(100% - 260px);
+  padding-left: 16px;
+}
+
+.statistics_lookup {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.search_bar {
+  width: 509px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  border-radius: 42px;
+  padding: 24px;
+}
+
+.statistics--cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.statistics_card {
+  width: 230px;
+  height: 120px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statistics_card--status {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 0;
+}
+
+.status_tag {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ead40e;
+}
+
+.status_quantity {
+  font-weight: 500;
+  font-size: 28px;
+  color: #444444;
+}
+
+.statistics_percentage--container {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ead40e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid rgba(234, 212, 14, 0.4);
+  border-radius: 50%;
+}
+
+.pending {
+  color: #ead40e;
+}
+
+.percentage-tag {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ead40e;
+}
+
+.approved-tag {
+  font-weight: 500;
+  font-size: 20px;
+  color: #67d95d;
+}
+
+.approved {
+  color: #67d95d;
+}
+
+.approved_percentage {
+  font-weight: 500;
+  font-size: 20px;
+  color: #67d95d;
+}
+
+.approved_percentage--container {
+  border: 5px solid #67d95d;
+  border-left: 5px solid hsla(115, 62%, 61%, 0.4);
+}
+
+.rejected_tag {
+  color: #eb1616;
+}
+
+.rejected_percentage--tag {
+  font-weight: 500;
+  font-size: 20px;
+  color: #eb1616;
+}
+
+.rejected {
+  color: #eb1616;
+}
+
+.rejected_percentage--container {
+  border: 5px solid #eb1616;
+  border-left: 5px solid hsl(0, 84%, 50%, 0.4);
+}
+
+.missing_tag {
+  color: #cb52e4;
+}
+
+.missing_percentage-tag {
+  font-weight: 500;
+  font-size: 20px;
+  color: #cb52e4;
+}
+
+.missing_percentage--container {
+  border: 5px solid #cb52e4;
+  border-left: 5px solid hsl(290, 73%, 61%, 0.4);
+}
+.months_of_calender {
+  width: 100%;
+}
+
+/* Application button styles*/
+.button-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.primary_button {
+  background: #0f58ef;
+  border: 1px solid #ffff;
+  cursor: pointer;
+  border-radius: 24px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.primary_button2 {
+  background: #0f58ef;
+  border: 1px solid #ffff;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.secondary_button {
+  background: #ffffff;
+  border: 2px solid #0f58ef;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0063f7;
+  cursor: pointer;
+}
+
+/* Main page header section styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.header_container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  gap: 16px;
+}
+
+.header_logo {
+  background-color: #2258bf;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  width: 41.77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_main--heading {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1c1c28;
+}
+
+.header_selectUnit--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  position: relative;
+}
+
+.header_selectUnit--tag {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0063f7;
+}
+
+.header_selectUnit--dropdown {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 343px;
+  height: 35px;
+  padding: 8px;
+  margin: 0;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+/* Main modal styles */
+.modal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal_container {
+  width: 1100px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 45px;
+  animation: slidein 0.5s forwards;
+}
+
+.return_arrow--container {
+  height: 50px;
+  margin: 0;
+}
+
+.timesheet_details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employee_name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0063f7;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #444444;
+}
+
+.timesheet_status {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+
+.timesheet_status--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.group_one {
+  padding: 12px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group_two {
+  padding: 12px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.info_text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #606170;
+}
+
+.modal_datatable {
+  height: 365px;
+
+  margin: 30px 0;
+}
+
+.decision_section {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_area {
+  background: rgba(217, 217, 217, 0.51);
+  border-radius: 8px;
+  outline: none;
+  width: 600px;
+  border: none;
+  padding: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.approve_button {
+  background: #0f58ef;
+  border: 1px solid #ffff;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.reject_button {
+  background: #fff;
+  border: 2px solid #0f58ef;
+  border-radius: 42px;
+  width: 182.53px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f58ef;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.284);
+  backdrop-filter: blur(3px);
+}
+
+.btn-close {
+  cursor: pointer;
+}
+
+.closeModal_div {
+  width: 700px;
+  height: 100%;
+}
+
+@keyframes slidein {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 1100px;
+  }
+}
+
+.purple_color {
+  color: #cb52e4;
+}
+
+.red_color {
+  color: #ff0000;
+}
+
+.green_color {
+  color: #219653;
+}
+
+#ModalTblData input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.namelink {
+  padding: 4px 8px;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Name modal styles */
+
+.name_modal {
+  height: 100%;
+  width: 100%;
+  padding: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.hidden_modal {
+  display: none;
+  background-color: #fff;
+  height: 100%;
+  width: 80%;
+}
+
+.name_modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.284);
+  backdrop-filter: blur(3px);
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+.nameModal_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.closeNameModal {
+  cursor: pointer;
+}
+
+.table1 {
+  background-color: #fff;
+}
+
+.NameModal_container {
+  width: 85%;
+  height: auto;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 32px;
+  animation: nameSlidein 0.5s forwards;
+}
+
+@keyframes nameSlidein {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+/* Datatables styles */
+.timesheet_table {
+  padding: 0 0 30px 0;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+}
+
+.timesheet_table--head {
+  height: 45px;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.512);
+}
+
+.timesheet_table--row {
+  height: 35px;
+}
+
+td {
+  font-weight: 500;
+  font-size: 14px;
+  color: #342e59;
+  background: #ffffff;
+}
+
+.table_head--column {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #342e59;
+  text-align: start;
+  background: #d1d1d108;
+}
+
+img.view {
+  cursor: pointer;
+}
+
+#tblData tr {
+  cursor: pointer;
+}
+
+.comment_Section--container {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.comments_section {
+  width: 436px;
+  height: 134px;
+  background: rgba(15, 88, 239, 0.09);
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+}
+
+#tblData input[type="checkbox"] {
+  height: 21px;
+  width: 21px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  border: 2px solid blue;
+  transition: all 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+#tblData button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
