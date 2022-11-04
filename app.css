@@ -653,3 +653,43 @@ img.view {
   background-color: #fff;
   cursor: pointer;
 }
+
+/* select children page */
+
+.selectChildren_container {
+  height: 100vh;
+  width: 100vw;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.select_container--header {
+  display: flex;
+}
+
+.placeble {
+  width: 70%;
+}
+
+.dropdown_container {
+  width: 30%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.children_table {
+  height: 500px;
+  width: 100%;
+}
+
+.hidden_page {
+  display: none;
+}

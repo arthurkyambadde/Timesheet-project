@@ -150,6 +150,7 @@
                   <th>Processed</th>
                   <th>Total hours</th>
                   <th>View</th>
+                  <th>Select</th>
                   <th>Report</th>
                 </tr>
               </thead>
@@ -774,6 +775,54 @@
               </div>
             </section>
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="selectChildren_container hidden_page">
+      <div class="select_container--header">
+        <div class="placeble">
+          <div class="header_container">
+            <p class="header_logo">AS</p>
+            <h1 class="header_main--heading">Approval Screen</h1>
+          </div>
+        </div>
+        <div class="dropdown_container">
+          <label for="cars">Choose a worker</label>
+          <select name="cars" id="workers">
+            <option value="root" selected>Root</option>
+            <option value="jimmy">Jimmy</option>
+            <option value="daniel">Daniel</option>
+            <option value="jordan">Jordan</option>
+            <option value="sandra">Sandra</option>
+            <option value="patricia">Patricia</option>
+          </select>
+        </div>
+      </div>
+      <div class="children_table">
+        <div class="dataTable">
+          <table class="table1" id="selecttblData">
+            <thead>
+              <tr>
+                <th>
+                  <input
+                    type="checkbox"
+                    class="largerCheckbox"
+                    id="selectAll"
+                  />
+                </th>
+                <th>Employee</th>
+                <th>Type</th>
+                <th>Submitted</th>
+                <th>Submission Date</th>
+                <th>Approved/Rejected By</th>
+                <th>Date Approved</th>
+                <th>Processed</th>
+                <th>Total hours</th>
+                <th>View</th>
+                <th>Report</th>
+              </tr>
+            </thead>
+          </table>
         </div>
       </div>
     </div>

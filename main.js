@@ -3,9 +3,44 @@ let source_data = null;
 let modal_data = null;
 let selected_data = null;
 
-// Name modal DataTabble
+// On click callbacks
 $(document).ready(function () {
+  // Name modal DataTabble
   $("#nameModal").DataTable();
+
+  // Approve buton function for approving data for main page
+  $("#submitButtonselectAll").click(approveData);
+
+  // Reject button function for rejecting data for main page
+  $("#rejectedButton").click(rejectData);
+
+  // Reject buton function for approving data for main modal
+  $("#rejectedButton").click(rejectData);
+
+  // Approve buton function for approving data for main modal
+  $("#MsubmitButton").click(approveMData);
+
+  // Close modal functionality icon
+  $(".closeNameModal").click(closeNameModal);
+
+  // Close modal functionality ovalay when clicked
+  $(".name_modal__overlay").click(closeNameModal);
+
+  // Checkbox checkall function for main page
+  $("#selectAll").click(function () {
+    $("table.table1 input[type=checkbox]").prop(
+      "checked",
+      $("#selectAll").is(":checked")
+    );
+  });
+
+  // Checkbox checkall function for main modal
+  $("#ModalSelectAll").click(function () {
+    $("table.table2 input[type=checkbox]").prop(
+      "checked",
+      $("#ModalSelectAll").is(":checked")
+    );
+  });
 });
 
 // Main page datatable
@@ -33,6 +68,7 @@ $(document).ready(function () {
           { data: "Processed" },
           { data: "Totalhours" },
           { data: "viewIcon" },
+          { data: "Select" },
           { data: "downloadIcon" },
         ],
         initComplete: function () {
@@ -41,6 +77,10 @@ $(document).ready(function () {
             selected_data = source_data.find((item) => item.id === selectedID);
             setModalInfo(selected_data);
             openModal();
+          });
+
+          $("#tblData tbody ").on("click", ".viewSelect", function (e) {
+            openSelectPage();
           });
 
           const closeModalBtn = document.querySelector(".btn-close");
@@ -85,13 +125,82 @@ $(document).ready(function () {
             const object = e.target;
             const selectedID = object.dataset.id;
 
-            console.log(selectedID);
             name_modal__data = source_data.find(
               (item) => item.id === selectedID
             );
             closeModal();
 
             openNameModal();
+          });
+        },
+      });
+    });
+});
+
+//selcet container datatable
+
+$(document).ready(function () {
+  fetch("./Data/data.json")
+    .then((res) => res.json())
+    .then((req) => {
+      source_data = req.data;
+      let option = req.data;
+
+      $("#selecttblData").DataTable({
+        data: source_data[1].children,
+        pageLength: 5,
+        lengthMenu: [5, 10, 20, 50, 100, 200, 500],
+        lengthMenu: [3, 5, 10, 20, 50, 100, 200, 500],
+        columnDefs: [
+          { orderable: false, targets: [0] },
+          { orderable: true, targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+        ],
+        columns: [
+          { data: "CheckBoxIcon" },
+          { data: "Employee" },
+          { data: "Type" },
+          { data: "Submitted" },
+          { data: "Submission_Date" },
+          { data: "Approved/Rejected By" },
+          { data: "Date Approved" },
+          { data: "Processed" },
+          { data: "Totalhours" },
+          { data: "viewIcon" },
+          { data: "downloadIcon" },
+        ],
+        initComplete: function () {
+          $("#workers").change(function () {
+            dropdown = $("#workers").val();
+            for (let i = 0; i < option.length; i++) {
+              if (dropdown === option[i].name) {
+                $("#selecttblData").DataTable({
+                  data: source_data[i].children,
+                  pageLength: 5,
+
+                  destroy: true,
+                  searching: false,
+
+                  columns: [
+                    { data: "CheckBoxIcon" },
+                    { data: "Employee" },
+                    { data: "Type" },
+                    { data: "Submitted" },
+                    { data: "Submission_Date" },
+                    { data: "Approved/Rejected By" },
+                    { data: "Date Approved" },
+                    { data: "Processed" },
+                    { data: "Totalhours" },
+                    { data: "viewIcon" },
+                    { data: "downloadIcon" },
+                  ],
+                });
+              } else if (dropdown === "root") {
+                const selectPage = document.querySelector(
+                  ".selectChildren_container"
+                );
+                selectPage.classList.add("hidden_page");
+              }
+            }
           });
         },
       });
@@ -140,42 +249,6 @@ function renderModalTable() {
     ],
   });
 }
-
-// Checkbox checkall function for main page
-$(document).ready(function () {
-  $("#selectAll").click(function () {
-    $("table.table1 input[type=checkbox]").prop(
-      "checked",
-      $("#selectAll").is(":checked")
-    );
-  });
-});
-
-// Checkbox checkall function for main modal
-$(document).ready(function () {
-  $("#ModalSelectAll").click(function () {
-    $("table.table2 input[type=checkbox]").prop(
-      "checked",
-      $("#ModalSelectAll").is(":checked")
-    );
-  });
-});
-
-// On click callbacks
-$(document).ready(function () {
-  // Approve buton function for approving data for main page
-  $("#submitButtonselectAll").click(approveData);
-  // Reject button function for rejecting data for main page
-  $("#rejectedButton").click(rejectData);
-  // Reject buton function for approving data for main modal
-  $("#rejectedButton").click(rejectData);
-  // Approve buton function for approving data for main modal
-  $("#MsubmitButton").click(approveMData);
-  // Close modal functionality icon
-  $(".closeNameModal").click(closeNameModal);
-  // Close modal functionality ovalay when clicked
-  $(".name_modal__overlay").click(closeNameModal);
-});
 
 //approve data functions for main page Datatable
 
@@ -420,4 +493,11 @@ async function loadCardData() {
         }
       });
     });
+}
+
+//select page
+
+function openSelectPage() {
+  const selectPage = document.querySelector(".selectChildren_container");
+  selectPage.classList.remove("hidden_page");
 }
