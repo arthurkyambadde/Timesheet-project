@@ -68,8 +68,8 @@ $(document).ready(function () {
           { data: "Processed" },
           { data: "Totalhours" },
           { data: "viewIcon" },
-          { data: "Select" },
           { data: "downloadIcon" },
+          { data: "Select" },
         ],
         initComplete: function () {
           $("#tblData tbody ").on("click", ".view", function (e) {
