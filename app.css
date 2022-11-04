@@ -394,6 +394,16 @@ body {
   margin: 30px 0;
 }
 
+.viewSelect {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #0f58ef !important;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+}
+
 .decision_section {
   padding: 12px 0;
   display: flex;
