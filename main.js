@@ -51,7 +51,7 @@ $(document).ready(function () {
       source_data = req.data;
       $("#tblData").DataTable({
         data: source_data,
-        pageLength: 3,
+        pageLength: 5,
         lengthMenu: [5, 10, 20, 50, 100, 200, 500],
         columnDefs: [
           { orderable: false, targets: [0, 9, 10] },
@@ -171,29 +171,36 @@ $(document).ready(function () {
         initComplete: function () {
           $("#workers").change(function () {
             dropdown = $("#workers").val();
+
             for (let i = 0; i < option.length; i++) {
               if (dropdown === option[i].name) {
-                $("#selecttblData").DataTable({
-                  data: source_data[i].children,
-                  pageLength: 5,
+                fetch(`./Data/${dropdown}.json`)
+                  .then((res) => res.json())
+                  .then((req) => {
+                    source_data = req.data;
 
-                  destroy: true,
-                  searching: false,
+                    $("#selecttblData").DataTable({
+                      data: source_data,
+                      pageLength: 5,
 
-                  columns: [
-                    { data: "CheckBoxIcon" },
-                    { data: "Employee" },
-                    { data: "Type" },
-                    { data: "Submitted" },
-                    { data: "Submission_Date" },
-                    { data: "Approved/Rejected By" },
-                    { data: "Date Approved" },
-                    { data: "Processed" },
-                    { data: "Totalhours" },
-                    { data: "viewIcon" },
-                    { data: "downloadIcon" },
-                  ],
-                });
+                      destroy: true,
+                      searching: false,
+
+                      columns: [
+                        { data: "CheckBoxIcon" },
+                        { data: "Employee" },
+                        { data: "Type" },
+                        { data: "Submitted" },
+                        { data: "Submission_Date" },
+                        { data: "Approved/Rejected By" },
+                        { data: "Date Approved" },
+                        { data: "Processed" },
+                        { data: "Totalhours" },
+                        { data: "viewIcon" },
+                        { data: "downloadIcon" },
+                      ],
+                    });
+                  });
               } else if (dropdown === "root") {
                 const selectPage = document.querySelector(
                   ".selectChildren_container"
